@@ -1,8 +1,3 @@
-env:
-  REPO_CONSOLIDATE: "devonfw-guide"
-  BUILD_USER: ${{ secrets.BUILD_USER }}
-  BUILD_USER_PASSWD: ${{ secrets.BUILD_USER_PASSWD }}
-  BUILD_USER_EMAIL: ${{ secrets.BUILD_USER_EMAIL }}
 name: Sync Docs 
 on:
   push:
@@ -18,3 +13,6 @@ jobs:
     uses: devonfw/.github/.github/workflows/devonfw-sync-docs.yml@master
     secrets:
       RESUSABLE_GH_ACTION_TOKEN: ${{ secrets.GHA_TOKEN }}
+      BUILD_USER: ${{ secrets.BUILD_USER }}
+      BUILD_USER_PASSWD: ${{ secrets.BUILD_USER_PASSWD }}
+      BUILD_USER_EMAIL: ${{ secrets.BUILD_USER_EMAIL }}
