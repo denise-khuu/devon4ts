@@ -1,13 +1,25 @@
 === General
-** link:architecture[Architecture Overview]
-** link:meta-architecture[Client Meta Architecture]
-** link:components-layer[Components Layer]
-** link:services-layer[Services Layer]
 ** link:guide-package-managers[Package Managers]
 ** link:guide-npm-yarn-workflow[Package Managers Workflow]
 ** link:guide-yarn-2-support[Yarn 2 Support]
 
 === Angular
+** Architecture
+*** link:architecture[Architecture Overview]
+*** link:meta-architecture[Client Meta Architecture]
+*** link:components-layer[Components Layer]
+*** link:services-layer[Services Layer]
+** NgRx
+*** link:guide-ngrx-getting-started[Introduction]
+*** link:guide-ngrx-simple-store[State, Selection and Reducers]
+*** link:guide-ngrx-effects[Side effects with NgRx/Effects]
+*** link:guide-ngrx-entity[Simplifying CRUD with NgRx/Entity]
+** Guides
+*** link:cookbook-abstract-class-store[Abstract Class Store]
+*** link:guide-add-electron[Angular Electron]
+*** link:guide-angular-mock-service.asciidoc[Mock Service]
+*** link:guide-cypress.asciidoc[Cypress e2e testing]
+*** link:guide-eslint.asciidoc[Angular ESLint]
 ** link:guide-accessibility[Accessibility]
 ** link:guide-angular-elements[Angular Elements]
 ** link:guide-angular-lazy-loading[Angular Lazy Loading]
@@ -32,25 +44,31 @@
 ** link:guide-ionic-from-code-to-android[Ionic to Android]
 ** link:guide-ionic-pwa[Ionic Progressive Web Apps]
 
-=== NgRx
-** link:guide-ngrx-getting-started[Introduction]
-** link:guide-ngrx-simple-store[State, Selection and Reducers]
-** link:guide-ngrx-effects[Side effects with NgRx/Effects]
-** link:guide-ngrx-entity[Simplifying CRUD with NgRx/Entity]
-
 === Nx
-** https://nx.dev/latest/angular/getting-started/intro
+** link:guide-creating-angular-app-with-nx-cli[Starting with Nx CLI in Angular]
 
-=== Microservices:
-** https://docs.nestjs.com/microservices/basics
+=== NestJS backend:
+** Layers
+*** link:layer-controller.asciidoc[Controller]
+*** link:layer-service.asciidoc[Service]
+*** link:layer-dataaccess.asciidoc[Data Access]
+** Guides
+*** link:guides-key-principles.asciidoc[Key Principles]
+*** link:guides-cli.asciidoc[devon4node CLI]
+*** link:guides-code-generation.asciidoc[Code Generation]
+*** link:guides-coding-conventions.asciidoc[Coding Conventions]
+*** link:guides-dependency-injection.asciidoc[Dependency Injection]
+*** link:guides-configuration-module.asciidoc[Configuration Module]
+*** link:guides-auth-jwt.asciidoc[Auth JWT Module]
+*** link:guides-swagger.asciidoc[Swagger]
+*** link:guides-typeorm.asciidoc[TypeORM]
+*** link:guides-serializer.asciidoc[Serializer]
+*** link:guides-validation.asciidoc[Validation]
+*** link:guides-logger.asciidoc[Logger]
+*** link:guides-mailer.asciidoc[Mailer Module]
+*** link:guides-eslint-sonarqube-config[ESLint SonarQube Configuration]
+** devon4node applications
+*** link:samples.asciidoc[devon4node Samples]
+*** link:samples-step-by-step.asciidoc[devon4node Sample Step by Step]
 
-=== Microfrontends:
-** https://www.angulararchitects.io/aktuelles/the-microfrontend-revolution-module-federation-in-webpack-5/
-
-=== Cookbook
-** link:cookbook-abstract-class-store[Abstract Class Store]
-** link:guide-add-electron[Angular Electron]
-** link:guide-angular-mock-service.asciidoc[Mock Service]
-** link:guide-cypress.asciidoc[Cypress e2e testing]
-** link:guide-eslint.asciidoc[Angular ESLint]
 
