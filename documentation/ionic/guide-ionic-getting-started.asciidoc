@@ -57,14 +57,14 @@ To create an empty project, the following command can be used:
 
 `ionic start MyApp blank --type=angular`
 
-image::images/ionic-getting-started/ionic-blank-project.PNG["Ionic blank project", link="images/ionic-getting-started/ionic-blank-project.PNG"]
+image::../images/ionic-getting-started/ionic-blank-project.PNG["Ionic blank project", link="../images/ionic-getting-started/ionic-blank-project.PNG"]
 
 The image above shows the directory structure generated.
 
 There are more templates available that can be seen with the command
 `ionic start --list`
 
-image::images/ionic-getting-started/ionic-start-list.png["List of ionic templates", link="images/ionic-getting-started/ionic-start-list.png"]
+image::../images/ionic-getting-started/ionic-start-list.png["List of ionic templates", link="../images/ionic-getting-started/ionic-start-list.png"]
 
 The templates surrounded by red line are based on angular and comes with Ionic v5, while the others belong to earlier versions (before v4).
 

@@ -55,7 +55,7 @@ export class CoffeeController {
 
 == Dependency Graph
 
-image::images/plantuml/dependency-injection1.png[]
+image::../images/plantuml/dependency-injection1.png[]
 
 In the previous image, the Module A can inject dependencies exported by Module B, Module E and Module F. If module B reexport Module C and Module D, they are also accessible by Module A.
 
@@ -63,7 +63,7 @@ If there is a conflict with the injection token, it resolves the provider with l
 
 When you define a module as global, the dependency injection system is the same. The only difference is now all modules as a link to the global module. For example, if we make the Module C as global the dependency graph will be:
 
-image::images/plantuml/dependency-injection2.png[]
+image::../images/plantuml/dependency-injection2.png[]
 
 == Custom providers
 

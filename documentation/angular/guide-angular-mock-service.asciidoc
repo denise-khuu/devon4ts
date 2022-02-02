@@ -42,7 +42,7 @@ The answer to all these questions is an Angular Service (that we will just call 
 A service is an injectable logic that can be consumed by all the components that need it. It can carry manipulation functions and ,in our case, fetch data from a provider. 
 [[id_service_architecture]]
 .Angular Components & Services architecture.
-image::images/architecture.png["Service Architecture", width=600 link="images/architecture.png"]
+image::../images/architecture.png["Service Architecture", width=600 link="../images/architecture.png"]
 
 Inside the Angular App, an Injector gives access to each component to their required services. It's good coding practice to use a distinct service to each data type you want to manipulate. The type is described in a interface. 
 
@@ -54,7 +54,7 @@ https://github.com/devonfw/devon4ng/wiki/services-layer[Learn more about Angular
 
 [[id_data_box]]
 .Data box in relation to services and components.
-image::images/data-box.jpg["Data Box", width=600 link="images/data-box.jpg"]
+image::../images/data-box.jpg["Data Box", width=600 link="../images/data-box.jpg"]
 
 Let's consider a 'box of data' represented in JSON. Physically, this means a folder with some JSON/TS files in it. They are located in the *app/mock* folder. The example uses only one mock data file. The file is typed according to our data model. 
 
@@ -62,7 +62,7 @@ Pro tip: separate your files based on purpose. In your source code, put the *moc
 
 [[id_project_structure]]
 .Project structure.
-image::images/project-structure.png["Project Structure", width=auto, link="images/data-box.png"]
+image::../images/project-structure.png["Project Structure", width=auto, link="../images/data-box.png"]
 
 Aligned with the Angular way of development, we are implementing a model-view-controller pattern. 
 

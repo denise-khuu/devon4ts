@@ -47,7 +47,7 @@ This is where this architecture comes in.
 The architecture describes two layers. The terminology is based on common language in web development.
 
 .Layers
-image::images/architecture-layers.svg["Architecture - Layers", width="450", link="images/architecture-layers.svg"]
+image::../images/architecture-layers.svg["Architecture - Layers", width="450", link="../images/architecture-layers.svg"]
 
 * link:components-layer[*Components Layer*] encapsulates components which present the current application state.
 Components are separated into link:components-layer[_Smart_ and _Dumb Components_].
@@ -69,7 +69,7 @@ Angular requires a module called _app_ which is the main entrance to an applicat
 Angular Style Guide defines feature modules and two special modules - https://angular.io/guide/ngmodule#the-core-module[_core_] and https://angular.io/guide/ngmodule#shared-module[_shared_]. 
 
 .Modules
-image::images/architecture-modules.svg["Architecture - Modules", width="450", link="images/architecture-modules.svg"]
+image::../images/architecture-modules.svg["Architecture - Modules", width="450", link="../images/architecture-modules.svg"]
 
 A feature module is basically a vertical cut through both layers.
 The _shared_ module consists of components shared across feature modules.
