@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 jobs:
     update-wiki:
-        if: ${{github.repository == 'akanagar/devon4ts'}}
+        if: ${{github.repository == 'devonfw/devon4ts'}}
         runs-on: ubuntu-latest
         steps:
           - name: setup variables
