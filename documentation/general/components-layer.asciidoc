@@ -43,7 +43,7 @@ A _Dumb Component_ can be used by one to many _Smart Components_.
 Inside the component tree a _Dumb Component_ is a child of a _Smart Component_.
 
 .Component tree example
-image::images/component-tree.svg["Component Tree", width="450", link="images/component-tree.svg", align="center"]
+image::../images/component-tree.svg["Component Tree", width="450", link="../images/component-tree.svg", align="center"]
 
 As shown the topmost component is always the `AppComponent` in Angular applications.
 The component tree describes the hierarchy of components starting from `AppComponent`.
@@ -85,7 +85,7 @@ The following figure illustrates an unidirectional data flow.
 * Events bubble up, to be handled by a _Smart Component_.
 
 .Smart and Dumb Component Interaction
-image::images/smart-dumb-components-interaction.svg["Smart and Dumb Components Interaction", width="450", link="images/smart-dumb-components-interaction.svg", align="center"]
+image::../images/smart-dumb-components-interaction.svg["Smart and Dumb Components Interaction", width="450", link="../images/smart-dumb-components-interaction.svg", align="center"]
 
 As shown a _Dumb Components_ role is to define a signature by declaring Input and Output Bindings.
 

@@ -26,7 +26,7 @@ Angular handles lazy loading through the routing module which redirects to reque
 To explain how lazy loading is implemented using angular, a basic sample app is going to be developed. This app will consist in a window named "level 1" that contains two buttons that redirects to other windows in a "second level". It is a simple example, but useful to understand the relation between angular modules and lazy loading.
 
 .Levels app structure.
-image::images/angular/angular-lazy/levels-app.png["Levels app structure", width=500 link="images/angular/angular-lazy/levels-app.png"]
+image::../images/angular/angular-lazy/levels-app.png["Levels app structure", width=500 link="../images/angular/angular-lazy/levels-app.png"]
 
 This graphic shows that modules acts as gates to access components "inside" them.
 
@@ -173,22 +173,22 @@ Using the current configuration, we have a project that loads all the modules in
 First, during the compilation we can see that just a main file is built.
 
 .Compile eager.
-image::images/angular/angular-lazy/compile-eager.png["Compile eager", width=800 link="images/angular/angular-lazy/compile-eager.png"]
+image::../images/angular/angular-lazy/compile-eager.png["Compile eager", width=800 link="../images/angular/angular-lazy/compile-eager.png"]
 
 If we go to `http://localhost:4200/first` and open developer options (F12 on Chrome), it is found that a document named "first" is loaded.
 
 .First level eager.
-image::images/angular/angular-lazy/first-lvl-eager.png["First level eager", width=800 link="images/angular/angular-lazy/first-lvl-eager.png"]
+image::../images/angular/angular-lazy/first-lvl-eager.png["First level eager", width=800 link="../images/angular/angular-lazy/first-lvl-eager.png"]
 
 If we click on *[Go to right module]* a second level module opens, but there is no 'second-right' document.
 
 .Second level right eager.
-image::images/angular/angular-lazy/second-lvl-right-eager.png["Second level right eager", width=800 link="images/angular/angular-lazy/second-lvl-right-eager.png"]
+image::../images/angular/angular-lazy/second-lvl-right-eager.png["Second level right eager", width=800 link="../images/angular/angular-lazy/second-lvl-right-eager.png"]
 
 But, typing the URL directly will load 'second-right' but no 'first', even if we click on *[Go back]*
 
 .Second level right eager direct URL.
-image::images/angular/angular-lazy/second-lvl-right-eager-d.png["Second level right eager", width=800 link="images/angular/angular-lazy/second-lvl-right-eager-d.png"]
+image::../images/angular/angular-lazy/second-lvl-right-eager-d.png["Second level right eager", width=800 link="../images/angular/angular-lazy/second-lvl-right-eager-d.png"]
 
 Modifying an angular application to load its modules lazily is easy, you have to change the routing configuration of the desired module (for example `FirstModule`).
 
@@ -247,17 +247,17 @@ const routes: Routes = [
 If we go to '_first_' then `FirstModule` is situated in '_/first_' but also its children `ContentLeft` and `ContentRight`, so it is not necessary to write in their path '_first/second-left_' and '_first/second-right_', because that will situate the components on '_first/first/second-left_' and  '_first/first/second-right_'.
 
 .First level lazy wrong path.
-image::images/angular/angular-lazy/first-lvl-wrong-path.png["First level wrong path", width=800 link="images/angular/angular-lazy/first-lvl-wrong-path.png"]
+image::../images/angular/angular-lazy/first-lvl-wrong-path.png["First level wrong path", width=800 link="../images/angular/angular-lazy/first-lvl-wrong-path.png"]
 
 When we compile an app with lazy loaded modules, files containing them will be generated
 
 .First level lazy compilation.
-image::images/angular/angular-lazy/compile-first-lazy.png["First level lazy compilation", width=800 link="images/angular/angular-lazy/compile-first-lazy.png"]
+image::../images/angular/angular-lazy/compile-first-lazy.png["First level lazy compilation", width=800 link="../images/angular/angular-lazy/compile-first-lazy.png"]
 
 And if we go to _developer tools -> network_, we can find those modules loaded (if they are needed).
 
 .First level lazy.
-image::images/angular/angular-lazy/first-lvl-lazy.png["First level lazy", width=800 link="images/angular/angular-lazy/first-lvl-lazy.png"]
+image::../images/angular/angular-lazy/first-lvl-lazy.png["First level lazy", width=800 link="../images/angular/angular-lazy/first-lvl-lazy.png"]
 
 To load the component `ContentComponent` of `SecondLeftModule` lazily, we have to load `SecondLeftModule` as a children of `FirstModule`:
 
@@ -310,12 +310,12 @@ export class SecondLeftRoutingModule { }
 * run `ng serve` to generate files containing the lazy modules.
 
 .Second level lazy loading compilation.
-image::images/angular/angular-lazy/second-lvl-lazy.png["Second level lazy", width=800 link="images/angular/angular-lazy/second-lvl-lazy.png"]
+image::../images/angular/angular-lazy/second-lvl-lazy.png["Second level lazy", width=800 link="../images/angular/angular-lazy/second-lvl-lazy.png"]
 
 Clicking on *[Go to left module]* triggers the load of `SecondLeftModule`.
 
 .Second level lazy loading network.
-image::images/angular/angular-lazy/second-lvl-left-lazy.png["Second level lazy network", width=800 link="images/angular/angular-lazy/second-lvl-left-lazy.png"]
+image::../images/angular/angular-lazy/second-lvl-left-lazy.png["Second level lazy network", width=800 link="../images/angular/angular-lazy/second-lvl-left-lazy.png"]
 
 == Conclusion
 

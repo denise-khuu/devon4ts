@@ -253,7 +253,7 @@ export class Employee extends BaseEntity {
 .. In order to create migration scripts with TypeORM, you need to install ts-node: `yarn global add ts-node`
 .. Generate the tables creation migration: `yarn run typeorm migration:generate -n CreateTables`
 +
-image::images/sample/generate-migrations.PNG[] 
+image::../images/sample/generate-migrations.PNG[] 
 +
 The output will be something similar to:
 +
@@ -284,7 +284,7 @@ The number in the name is a timestamp, so may change in your application.
 +
 .. Create a migration to insert data:`yarn run typeorm migration:generate -n InsertData`
 +
-image::images/sample/insert-data.PNG[]
+image::../images/sample/insert-data.PNG[]
 +
 and fill in with the following code:
 +
@@ -327,15 +327,15 @@ export class InsertData1572480830290 implements MigrationInterface {
 +
 . Start the application: `yarn start:dev`
 +
-image::images/sample/start-app.png[]
+image::../images/sample/start-app.png[]
 +
 . Check the swagger endpoint: `http://localhost:3000/v1/api`
 +
-image::images/sample/swagger.png[]
+image::../images/sample/swagger.png[]
 +
 . Make petitions to the employee CRUD: `http://localhost:3000/v1/employee/employees`
 +
-image::images/sample/employees.png[]
+image::../images/sample/employees.png[]
 +
 . Write the tests
 +
@@ -409,4 +409,4 @@ describe('ConfigurationService', () => {
 +
 And the output should be:
 +
-image::images/sample/test.png[]
+image::../images/sample/test.png[]

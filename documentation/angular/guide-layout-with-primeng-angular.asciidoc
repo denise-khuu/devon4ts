@@ -21,7 +21,7 @@ The purpose of this guide is to get a basic understanding of creating layouts of
 
 
 .This is what the finished application will look like
-image::images/angular-primeng-layout/Screenshot_0.png[]
+image::../images/angular-primeng-layout/Screenshot_0.png[]
 
 
 == Let's begin
@@ -39,7 +39,7 @@ Once the creation process is complete, open your newly created application in Vi
 Angular will spin up a server and you can check your application by visiting http://localhost:4200/ in your browser. 
 
 .Blank Application
-image::images/angular-primeng-layout/Screenshot_1.png[]
+image::../images/angular-primeng-layout/Screenshot_1.png[]
 
 ==  Adding PrimeNG to the project
 
@@ -63,7 +63,7 @@ The css dependencies are as follows, Prime Icons, theme of your choice and struc
 ```
 
 .Styles on angular.json
-image::images/angular-primeng-layout/Screenshot_2.png[]
+image::../images/angular-primeng-layout/Screenshot_2.png[]
 
 == Development
 
@@ -75,16 +75,16 @@ ng generate component components/header
 In this component, we are going to create the menu. 
 
 .Menu 
-image::images/angular-primeng-layout/Screenshot_5.png[]
+image::../images/angular-primeng-layout/Screenshot_5.png[]
 
 .Menu Dropdown
-image::images/angular-primeng-layout/Screenshot_6.png[]
+image::../images/angular-primeng-layout/Screenshot_6.png[]
 
 
 And will create the code like:
 
 .Header
-image::images/angular-primeng-layout/Screenshot_3.png[]
+image::../images/angular-primeng-layout/Screenshot_3.png[]
 
 ```
 <p-menubar [model]="items">
@@ -243,17 +243,17 @@ this.items = [
 ```
 
 .Menu Values
-image::images/angular-primeng-layout/Screenshot_4.png[]
+image::../images/angular-primeng-layout/Screenshot_4.png[]
 
 After the menus is done. The next step is create the main container, in this case will be the table.
 
 .Table
-image::images/angular-primeng-layout/Screenshot_7.png[]
+image::../images/angular-primeng-layout/Screenshot_7.png[]
 
 How is a very complex table we are going to explain component by component
 
 .Buttons
-image::images/angular-primeng-layout/Screenshot_8.png[]
+image::../images/angular-primeng-layout/Screenshot_8.png[]
 
 To create those buttons we just need to write this piece of code 
 
@@ -275,7 +275,7 @@ To create those buttons we just need to write this piece of code
 ```
 
 .Buttons Code
-image::images/angular-primeng-layout/Screenshot_9.png[]
+image::../images/angular-primeng-layout/Screenshot_9.png[]
 
 We can see some labels and attributes, for example `<p-toolbar>`, `pButton`, `<p-fuleUpload>`.
 
@@ -301,7 +301,7 @@ We see the first method is `openNew()` when we call this method a variable is go
 And when the productDialog its true, we will open a `Modal`  with the following code and will look like:
 
 .Modal
-image::images/angular-primeng-layout/Screenshot_11.png[]
+image::../images/angular-primeng-layout/Screenshot_11.png[]
 
 ```
 <p-dialog [(visible)]="productDialog" [style]="{width: '450px'}" header="Product Details" [modal]="true"
@@ -362,7 +362,7 @@ image::images/angular-primeng-layout/Screenshot_11.png[]
 </p-dialog>
 ```
 .Modal Code
-image::images/angular-primeng-layout/Screenshot_10.png[]
+image::../images/angular-primeng-layout/Screenshot_10.png[]
 
 To start to development this, we need to import `DialogModule`, `ConfirmDialogMoudle`, `InputTextModule`, `RadioButtonModule` and ` FormsModule` to do it we just need to write on `app.module`
 
@@ -374,7 +374,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputTextModule } from 'primeng/inputtext';
 ```
 .Modal Code
-image::images/angular-primeng-layout/Screenshot_11.png[]
+image::../images/angular-primeng-layout/Screenshot_11.png[]
 
 After that we can see a Modal with the form and when we click on the "Save Button", We will create a new product.
 
@@ -469,7 +469,7 @@ After done the first buttons, just need to do the rest of the table
 ```
 
 .Table Code
-image::images/angular-primeng-layout/Screenshot_12.png[]
+image::../images/angular-primeng-layout/Screenshot_12.png[]
 
 After that, need to add some styles to the code.
 
@@ -575,7 +575,7 @@ After that, need to add some styles to the code.
 
 ```
 .Table CSS
-image::images/angular-primeng-layout/tablestyle.png[]
+image::../images/angular-primeng-layout/tablestyle.png[]
 
 
 How we see it, we have some values already logged like `products` and some attributes that we need to import to use correctly the table.
@@ -650,7 +650,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 ```
 
 .All modules imported
-image::images/angular-primeng-layout/Screenshot_13.png[]
+image::../images/angular-primeng-layout/Screenshot_13.png[]
 
 How we can see, the first thing that the table is doing is loading all the products that we have.
 
@@ -783,7 +783,7 @@ export class ProductService {
 ```
 
 .Product Service
-image::images/angular-primeng-layout/Screenshot_14.png[]
+image::../images/angular-primeng-layout/Screenshot_14.png[]
 
 Also we create a interface for the Product, so all the products will have the same structure:
 
@@ -804,7 +804,7 @@ export interface Product {
 ```
 
 .Product Interface
-image::images/angular-primeng-layout/Screenshot_15.png[]
+image::../images/angular-primeng-layout/Screenshot_15.png[]
 
 How we can see in the methods, we are getting the data from a hardcoded file `product.json`.
 
@@ -1177,7 +1177,7 @@ How we can see in the methods, we are getting the data from a hardcoded file `pr
 ```
 
 .Product Json Data
-image::images/angular-primeng-layout/Screenshot_16.png[]
+image::../images/angular-primeng-layout/Screenshot_16.png[]
 
 But in our `component.ts` we can see in `ngOninit` that we are getting the data when the component is ready. So when the component is rendered the data will be in the table.
 
@@ -1205,7 +1205,7 @@ In the first section, we can see the `<ng-template>`, there is where we can sear
 ```
 
 .Search on Table
-image::images/angular-primeng-layout/Screenshot_17.png[]
+image::../images/angular-primeng-layout/Screenshot_17.png[]
 
 The next `<ng-template>` is the header of the table. We're we can see the name of each column.
 
@@ -1231,7 +1231,7 @@ The next `<ng-template>` is the header of the table. We're we can see the name o
 ```
 
 .Table Headers
-image::images/angular-primeng-layout/Screenshot_18.png[]
+image::../images/angular-primeng-layout/Screenshot_18.png[]
 
 After done the header, we need to do the table body. Here is where we need to print each row values
 
@@ -1261,7 +1261,7 @@ After done the header, we need to do the table body. Here is where we need to pr
 ```
 
 .Table Body
-image::images/angular-primeng-layout/Screenshot_19.png[]
+image::../images/angular-primeng-layout/Screenshot_19.png[]
 
 As we can see, we have some `buttons` with methods
 
@@ -1289,12 +1289,12 @@ The first method is to edit a specifict product `(click)="editProduct(product)"`
 ```
 
 .Delete and Edit methods
-image::images/angular-primeng-layout/Screenshot_20.png[]
+image::../images/angular-primeng-layout/Screenshot_20.png[]
 
 The last part of the table, we will have a section to know how many products we have.
 
 .Table footer
-image::images/angular-primeng-layout/Screenshot_21.png[]
+image::../images/angular-primeng-layout/Screenshot_21.png[]
 
 To do it just need to do another template and add the following code:
 
@@ -1309,4 +1309,4 @@ To do it just need to do another template and add the following code:
 ```
 
 .Table footer code
-image::images/angular-primeng-layout/Screenshot_22.png[]
+image::../images/angular-primeng-layout/Screenshot_22.png[]

@@ -28,7 +28,7 @@ It is a good practice to have a Angular service whose single responsibility is t
 Those services need to have the suffix `Adapter` to make them easy to recognize.
 
 .Adapters handle back-end communication
-image::images/rest-adapter.svg["Adapters handle back-end communication", width="450", link="images/rest-adapter.svg"]
+image::../images/rest-adapter.svg["Adapters handle back-end communication", width="450", link="../images/rest-adapter.svg"]
 
 As illustrated in the figure a Use Case service does not use `Angular HttpClient` directly but uses an adapter.
 A basic adapter could look like this:

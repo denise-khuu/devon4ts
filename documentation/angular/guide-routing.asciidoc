@@ -29,7 +29,7 @@ This pattern achieves a clear separation of concerns.
 The following figure illustrates this.
 
 .Routing module declaration
-image::images/module-declaration.svg["Routing module declaration", width="450", link="images/module-declaration.svg"]
+image::../images/module-declaration.svg["Routing module declaration", width="450", link="../images/module-declaration.svg"]
 
 It is important to define routes inside app routing module with `.forRoot()` and in feature routing modules with `.forChild()`.
 
@@ -144,7 +144,7 @@ TIP: If you do not have to support accessibility (screen readers, etc.) and to c
 then you should aim for triggering navigation only in _Smart Components_.
 
 .Triggering navigation
-image::images/triggering-navigation.svg["Triggering navigation", link="images/triggering-navigation.svg", width=350,height=200]
+image::../images/triggering-navigation.svg["Triggering navigation", link="../images/triggering-navigation.svg", width=350,height=200]
 
 == Guards
 
