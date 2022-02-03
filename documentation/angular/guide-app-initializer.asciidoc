@@ -434,6 +434,6 @@ Finally, for this demonstration app, the component `app/app.component.html` is g
 
 The script `start` that was created earlier in the `package.json` (`npm start`) is going to be used to start the application. After that, modifying the Boolean `loadExternalConfig` inside the corresponding environment file inside `/app/environments/` should show the different config versions.
 
-image::../images/app-initializer/loadExternalConfigFalse.png[, link="../images/loadExternalConfigFalse.png"]
+image::images/app-initializer/loadExternalConfigFalse.png[, link="images/loadExternalConfigFalse.png"]
 
-image::../images/app-initializer/loadExternalConfigTrue.png[, link="../images/loadExternalConfigTrue.png"]
+image::images/app-initializer/loadExternalConfigTrue.png[, link="images/loadExternalConfigTrue.png"]

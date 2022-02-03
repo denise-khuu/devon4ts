@@ -355,7 +355,7 @@ Immer works out of the box with plain objects and arrays.
 If the `StoreDevToolsModule` is instrumented as described above, you can use the browser extension https://github.com/reduxjs/redux-devtools[Redux devtools] to see all dispatched actions and the resulting state diff, as well as the current state, and even travel back in time by undoing actions.
 
 .Redux devtools
-image::../images/ngrx-devtools.png["Redux Devtools", link="../images/ngrx-devtools.png", align="center"]
+image::images/ngrx-devtools.png["Redux Devtools", link="images/ngrx-devtools.png", align="center"]
 
 
 Continue with link:guide-ngrx-effects[learning about effects]
