@@ -194,7 +194,7 @@ export class AppModule { }
 
 The result from using the library:
 
-image::../images/angular-library/result.png[, link="../images/angular-library/result.png"]
+image::images/angular-library/result.png[, link="images/angular-library/result.png"]
 
 
 

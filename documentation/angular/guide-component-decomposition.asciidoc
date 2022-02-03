@@ -25,7 +25,7 @@ Implementing a new dialog will most likely be done by defining a new _Smart Comp
 In the component tree this would translate to the definition of a new sub-tree.
 
 .Component Tree with highlighted sub-tree
-image::../images/component-tree-highlighted-subtree.svg["Component Tree With Highlighted Sub Tree", width="450", link="../images/component-tree-highlighted-subtree.svg"]
+image::images/component-tree-highlighted-subtree.svg["Component Tree With Highlighted Sub Tree", width="450", link="images/component-tree-highlighted-subtree.svg"]
 
 == Defining Components
 
@@ -43,19 +43,19 @@ Typing into the filter input field filters the list from which the elements can 
 The current selected element is highlighted with green background color. 
 
 .Component decomposition example before 
-image::../images/component-decomposition-example-1.svg["Component Decomposition Example 1v2", link="../images/component-decomposition-example-1.svg", width="450"]
+image::images/component-decomposition-example-1.svg["Component Decomposition Example 1v2", link="images/component-decomposition-example-1.svg", width="450"]
 
 What should be done, is to define small reusable _Dumb Components_.
 This way the complexity becomes manageable.
 In the example every colored box describes a component with the purple box being a _Smart Component_.
 
 .Component decomposition example after
-image::../images/component-decomposition-example-2.svg["Component Decomposition Example 2v2", link="../images/component-decomposition-example-2.svg", width="450"]
+image::images/component-decomposition-example-2.svg["Component Decomposition Example 2v2", link="images/component-decomposition-example-2.svg", width="450"]
 
 This leads to the following component tree.
 
 .Component decomposition example component tree
-image::../images/component-decomposition-example-component-tree.svg["Component Decomposition Example component tree", link="../images/component-decomposition-example-component-tree.svg", width="450"]
+image::images/component-decomposition-example-component-tree.svg["Component Decomposition Example component tree", link="images/component-decomposition-example-component-tree.svg", width="450"]
 
 Note the uppermost component is a _Dumb Component_.
 It is a wrapper for the label and the component to be displayed inside a form.

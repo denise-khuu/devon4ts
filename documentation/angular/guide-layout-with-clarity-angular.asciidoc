@@ -21,7 +21,7 @@ The purpose of this guide is to get a basic understanding of creating layouts An
 
 
 .This is what the finished application will look like
-image::../images/angular-clarity-layout/1.png[]
+image::images/angular-clarity-layout/1.png[]
 
 
 == Let's begin
@@ -39,7 +39,7 @@ Once the creation process is complete, open your newly created application in Vi
 Angular will spin up a server and you can check your application by visiting http://localhost:4200/ in your browser. 
 
 .Blank Application
-image::../images/angular-clarity-layout/2.png[]
+image::images/angular-clarity-layout/2.png[]
 
 ==  Adding Angular Clarity framework to the project
 
@@ -72,7 +72,7 @@ export class AppModule { }
 
 
 .ClarityModule
-image::../images/angular-clarity-layout/3.png[]
+image::images/angular-clarity-layout/3.png[]
 
 == Development
 
@@ -133,7 +133,7 @@ First thing that we need to do is the menu
 
 ```
 .Clarity Menu
-image::../images/angular-clarity-layout/4.png[] 
+image::images/angular-clarity-layout/4.png[] 
 
 The framework has its own css classes.
 For example, the first class that we can see is the `header-6` that one is a css style that change the color from the menu.
@@ -145,7 +145,7 @@ We can see 2 `<a>` tags with a different css class
 The first one has the activated class. The difference between both of them shows like this.
 
 .Difference 
-image::../images/angular-clarity-layout/5.png[]
+image::images/angular-clarity-layout/5.png[]
 
 
 After seeing this piece of code,  can see that the other part of the menu has another css class.
@@ -153,7 +153,7 @@ After seeing this piece of code,  can see that the other part of the menu has an
 After this all divs inside the last one, they are going to be aligned to the right.
 
 .Search 
-image::../images/angular-clarity-layout/6.png[]
+image::images/angular-clarity-layout/6.png[]
 
 To do this search bar, just need to create a form with the class `search`
 `<form class=”search”>`
@@ -161,7 +161,7 @@ To shows the icon we use the tag         `<label for="search_input"></label>`
 And the normal input with the 	`id=”search_input”` to match with the previous label
 
 .Dropdown 
-image::../images/angular-clarity-layout/7.png[]
+image::images/angular-clarity-layout/7.png[]
 
 To do the menu-dropdown , we use the tag owned by the framework called 
 `<clr-dropdown>`
@@ -178,7 +178,7 @@ To do the menu-dropdown , we use the tag owned by the framework called
   </clr-dropdown>
 ```
 .Dropdown 
-image::../images/angular-clarity-layout/8.png[]
+image::images/angular-clarity-layout/8.png[]
 
 The attribute `clrDropdownTrigger` is needed because if not, we cannot do the tag `<clr-dropdown-menu>` because that tag is going to be activated just if the `clrDropdownTrigger` is activated too.
 Also, with the attribute `clrPosition` when can decided where will be positioned the dropdown.
@@ -186,17 +186,17 @@ Also, with the attribute `clrPosition` when can decided where will be positioned
 The other part the menu, check the next figure.
 
 .Button  
-image::../images/angular-clarity-layout/9.png[]
+image::images/angular-clarity-layout/9.png[]
 
 It's pretty much the same code but we just change the attribute `aria-abel` and the icons`
 
 .Button Logic 
-image::../images/angular-clarity-layout/10.png[]
+image::images/angular-clarity-layout/10.png[]
 
 After we have the whole menu finished, time to see the card.
 
 .Card 
-image::../images/angular-clarity-layout/11.png[]
+image::images/angular-clarity-layout/11.png[]
 
 In the first figure, all the elements are aligned to the center.
 To do this, we just need to use the classes by the framework.
@@ -216,7 +216,7 @@ To create the card with his border and all the properties we just call the class
 To do the tooltip, check next figure.
 
 .Tooltip 
-image::../images/angular-clarity-layout/12.png[]
+image::images/angular-clarity-layout/12.png[]
 
 We just need to do an <a> tag with this attributes
   `<a href="..." role="tooltip" aria-haspopup="true" class="tooltip tooltip-bottom-right">`
@@ -247,7 +247,7 @@ To do it we just need to code
 For the next card, check next figure
 
 .Card 
-image::../images/angular-clarity-layout/13.png[]
+image::images/angular-clarity-layout/13.png[]
 
 We are using the same class from the card that we used before.
 But to do the numbers on the top we used :
@@ -275,7 +275,7 @@ If we have the progress success we need to use:
 As you can see, the card has a footer. Check next picture
 
 .Card
-image::../images/angular-clarity-layout/14.png[]
+image::images/angular-clarity-layout/14.png[]
 
 We just need to add a div with this class inside of the card div
 `<div class="card-footer">`

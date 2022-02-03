@@ -20,7 +20,7 @@ toc::[]
 The purpose of this guide is to get a basic understanding of creating layouts using https://material.angular.io[Angular Material] in a devon4ng application. We will create an application with a header containing some menu links and a sidenav with some navigation links.
 
 .This is what the finished application will look like
-image::../images/layout-angular-material/1-finished-application.png["Finished application", width="700", link="../images/layout-angular-material/1-finished-application.png", align="center"]
+image::images/layout-angular-material/1-finished-application.png["Finished application", width="700", link="images/layout-angular-material/1-finished-application.png", align="center"]
 
 == Create a new angular application
 
@@ -37,7 +37,7 @@ Once the creation process is complete, open your newly created application in Vi
 Angular will spin up a server and you can check your application by visiting http://localhost:4200/ in your browser.
 
 .Blank application
-image::../images/layout-angular-material/2-blank-application.png["Blank application", width="700", link="../images/layout-angular-material/2-blank-application.png", align="center"]
+image::images/layout-angular-material/2-blank-application.png["Blank application", width="700", link="images/layout-angular-material/2-blank-application.png", align="center"]
 
 == Adding Angular Material library to the project
 
@@ -123,7 +123,7 @@ body {
 At this point, if we run our application, this is how it will look like:
 
 .Application with Angular Material set up
-image::../images/layout-angular-material/3-material-added.png["Angular Material added to the application", width="700", link="../images/layout-angular-material/3-material-added.png", align="center"]
+image::images/layout-angular-material/3-material-added.png["Angular Material added to the application", width="700", link="images/layout-angular-material/3-material-added.png", align="center"]
 
 We will clear the `app.component.html` file and setup a header with a menu button and some navigational links. We will use `mat-toolbar`, `mat-button`, `mat-menu`, `mat-icon` and `mat-icon-button` for this:
 
@@ -157,7 +157,7 @@ Inside the mat-toolbar, we start with a button having mat-icon-button attribute,
 We follow it with some sample buttons having the mat-button attribute. Notice the first button has a property `matMenuTriggerFor` bound to a local reference `submenu`. As the property name suggests, the click of this button will display the `mat-menu` element with the specified local reference as a drop-down menu. The rest of the code is self explanatory.
 
 .This is how our application looks with the first menu button (Menu 1) clicked.
-image::../images/layout-angular-material/4-header.png["Header added to the application", width="700", link="../images/layout-angular-material/4-header.png", align="center"]
+image::images/layout-angular-material/4-header.png["Header added to the application", width="700", link="images/layout-angular-material/4-header.png", align="center"]
 
 We want to keep the sidenav toggling menu button on the left and move the rest to the right to make it look better. To do this we add a class to the menu icon button:
 
@@ -182,7 +182,7 @@ And in the `app.component.scss` file, we add the following style:
 The mat-toolbar element already has it's display property set to `flex`. Setting the menu icon button's `margin-right` property to `auto` keeps itself on the left and pushes the other elements to the right.
 
 .Final look of the header.
-image::../images/layout-angular-material/5-header-layout-final.png["Final look of the header", width="700", link="../images/layout-angular-material/5-header-layout-final.png", align="center"]
+image::images/layout-angular-material/5-header-layout-final.png["Final look of the header", width="700", link="images/layout-angular-material/5-header-layout-final.png", align="center"]
 
 Next, we will create a sidenav. But before that lets create a couple of components to navigate between, the links of which we will add to the sidenav.
 We will use the `ng generate component` (or `ng g c` command for short) to create _Home_ and _Data_ components. (Append `--project=devon4ng-mat-layout` to the command in a Nx workspace). We nest them in the `pages` sub-directory since they represent our pages.
@@ -248,11 +248,11 @@ h2 {
 The pages look somewhat better now:
 
 .Home page
-image::../images/layout-angular-material/6-home-page.png["Home page", width="700", link="../images/layout-angular-material/6-home-page.png", align="center"]
+image::images/layout-angular-material/6-home-page.png["Home page", width="700", link="images/layout-angular-material/6-home-page.png", align="center"]
 
 
 .Data page
-image::../images/layout-angular-material/7-data-page.png["Data page", width="700", link="../images/layout-angular-material/7-data-page.png", align="center"]
+image::images/layout-angular-material/7-data-page.png["Data page", width="700", link="images/layout-angular-material/7-data-page.png", align="center"]
 
 Let us finally create the sidenav. To implement the sidenav we need to use 3 Angular Material components: `mat-sidenav-container`, `mat-sidenav` and `mat-sidenav-content`.
 The `mat-sidenav-container`, as the name suggests, acts as a container for the sidenav and the associated content. So it is the parent element, and `mat-sidenav` and `mat-sidenav-content` are the children sibling elements. `mat-sidenav` represents the sidenav. We can put any content we want, though it is usually used to contain a list of navigational links. The `mat-sidenav-content` element is for containing the contents of our current page. Since we need the sidenav application-wide, we will put it in the `app.component.html`.
@@ -286,7 +286,7 @@ But if you check the running application in the browser, we don't see the sidena
 ```
 
 .Sidenav is implemented
-image::../images/layout-angular-material/8-sidenav-started.png["Sidenav works", width="700", link="../images/layout-angular-material/8-sidenav-started.png", align="center"]
+image::images/layout-angular-material/8-sidenav-started.png["Sidenav works", width="700", link="images/layout-angular-material/8-sidenav-started.png", align="center"]
 
 We can now open the sidenav by clicking the menu icon button. But it does not look right. The sidenav is only as wide as its content. Also the page does not stretch the entire viewport due to lack of content.
 Let's add the following styles to make the page fill the viewport:
@@ -359,7 +359,7 @@ mat-sidenav-container {
 Now we have a working application with a basic layout: a header with some menu and a sidenav with some navigational links.
 
 .Finished application
-image::../images/layout-angular-material/9-finished.png["Finished application", width="700", link="../images/layout-angular-material/9-finished.png", align="center"]
+image::images/layout-angular-material/9-finished.png["Finished application", width="700", link="images/layout-angular-material/9-finished.png", align="center"]
 
 
 == Conclusion

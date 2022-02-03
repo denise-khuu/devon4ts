@@ -51,7 +51,7 @@ If a back-end is hosted on http://localhost:8081, and that direction is used in 
 
 Android Studio uses 10.0.0.2 as alias for 127.0.0.1 (computer's localhost) so adding http//10.0.0.2:8081 in a new environment file and modifying angular.json accordingly, will make possible connect front-end and back-end.
 
-image::../images/ionic-to-android/environments.png["Android environment and angular.json", link="../images/ionic-to-android/environments.png"]
+image::images/ionic-to-android/environments.png["Android environment and angular.json", link="images/ionic-to-android/environments.png"]
 
 [source]
 ----
@@ -91,23 +91,23 @@ Once Android Studio is opened, follow these steps:
 1. Click on "Build" -> Make project.
 2. Click on "Build" -> Make Module 'app' (default name).
 
-image:../images/ionic-to-android/and-vsc-make.png[Click on make project,width="400" link="../images/ionic-to-android/and-vsc-make.png"]
-image:../images/ionic-to-android/and-vsc-make-app.png[click on make app,width="400" link="../images/ionic-to-android/and-vsc-make-app.png"]
+image:images/ionic-to-android/and-vsc-make.png[Click on make project,width="400" link="images/ionic-to-android/and-vsc-make.png"]
+image:images/ionic-to-android/and-vsc-make-app.png[click on make app,width="400" link="images/ionic-to-android/and-vsc-make-app.png"]
 
 [start=3]
 3. Click on" Build" -> Build Bundle(s) / APK(s) -> Build APK(s).
 4. Click on run and choose a device.
 
-image:../images/ionic-to-android/and-vsc-build-apk.png[click on build APK,width="400" link="../images/ionic-to-android/and-vsc-build-apk.png"]
-image:../images/ionic-to-android/and-vsc-build-run.png[click on running device,width="400" link="../images/ionic-to-android/and-vsc-build-run.png"]
+image:images/ionic-to-android/and-vsc-build-apk.png[click on build APK,width="400" link="images/ionic-to-android/and-vsc-build-apk.png"]
+image:images/ionic-to-android/and-vsc-build-run.png[click on running device,width="400" link="images/ionic-to-android/and-vsc-build-run.png"]
 
 If there are no devices available, a new one can be created:
 
 1. Click on "Create new device"
 2. Select hardware and click "Next". For example: Phone -> Nexus 5X.
 
-image:../images/ionic-to-android/create-new-device.png["Create new device",width="400" link="../images/ionic-to-android/create-new-device.png"]
-image:../images/ionic-to-android/new-phone-nexus.png["Select hardware",width="400" link="../images/ionic-to-android/new-phone-nexus.png"]
+image:images/ionic-to-android/create-new-device.png["Create new device",width="400" link="images/ionic-to-android/create-new-device.png"]
+image:images/ionic-to-android/new-phone-nexus.png["Select hardware",width="400" link="images/ionic-to-android/new-phone-nexus.png"]
 
 [start=3]
 3. Download a system image.
@@ -117,13 +117,13 @@ c. Click "Next".
 
 4. Verify configuration (default configuration should be enough) and click "Next".
 
-image:../images/ionic-to-android/download-so.png["Download system image",width="400" link="../images/ionic-to-android/download-so.png"]
-image:../images/ionic-to-android/config-device.png["Check configuration",width="400" link="../images/ionic-to-android/config-device.png"]
+image:images/ionic-to-android/download-so.png["Download system image",width="400" link="images/ionic-to-android/download-so.png"]
+image:images/ionic-to-android/config-device.png["Check configuration",width="400" link="images/ionic-to-android/config-device.png"]
 
 [start=5]
 5. Check that the new device is created correctly.
 
-image::../images/ionic-to-android/new-phone-created.png["New created device",width="400" link="../images/ionic-to-android/new-phone-created.png"]
+image::images/ionic-to-android/new-phone-created.png["New created device",width="400" link="images/ionic-to-android/new-phone-created.png"]
 
 == From Android project to real device
 
@@ -131,11 +131,11 @@ To test on a real android device, an easy approach to communicate a smartphone (
 
 Once connected, run `ipconfig` on a console if you are using windows or `ifconfig` on a linux machine to get the IP address of your machine's Wireless LAN adapter WiFi.
 
-image::../images/ionic-to-android/ipconfig-short.png["Result of `ipconfig` command on Windows 10" ,width="700"link="../images/ionic-to-android/ipconfig-short.png"]
+image::images/ionic-to-android/ipconfig-short.png["Result of `ipconfig` command on Windows 10" ,width="700"link="images/ionic-to-android/ipconfig-short.png"]
 
 This obtained IP must be used instead of "localhost" or "10.0.2.2" at environment.android.ts.
 
-image::../images/ionic-to-android/new-backend-url.PNG["Android environment file server URL" ,width="700" link="../images/ionic-to-android/new-backend-url.PNG"]
+image::images/ionic-to-android/new-backend-url.PNG["Android environment file server URL" ,width="700" link="images/ionic-to-android/new-backend-url.PNG"]
 
 After this configuration, follow the build steps in "From Ionic to Android project" and the first three steps in "From Android project to emulated device".
 
@@ -147,14 +147,14 @@ To send the built application to a device, you can connect computer and mobile t
 2. Click on "About".
 3. Click "Build number" seven times to unlock developer options.
 
-image::../images/ionic-to-android/enable-developer-options1_2_3.png["Steps to enable developer options: 1, 2, 3" ,width="700" link="../images/ionic-to-android/enable-developer-options1_2_3.png"]
+image::images/ionic-to-android/enable-developer-options1_2_3.png["Steps to enable developer options: 1, 2, 3" ,width="700" link="images/ionic-to-android/enable-developer-options1_2_3.png"]
 
 [start=4]
 4. Go to "System" again an then to "Developer options"
 5. Check that the options are "On".
 6. Check that "USB debugging" is activated.
 
-image::../images/ionic-to-android/enable-developer-options4_5_6.png["Steps to enable developer options: 4, 5, 6" ,width="700" link="../images/ionic-to-android/enable-developer-options4_5_6.png"]
+image::images/ionic-to-android/enable-developer-options4_5_6.png["Steps to enable developer options: 4, 5, 6" ,width="700" link="images/ionic-to-android/enable-developer-options4_5_6.png"]
 
 After this, do the step four in "From Android project to emulated device" and choose the connected smartphone.
 
@@ -162,10 +162,10 @@ After this, do the step four in "From Android project to emulated device" and ch
 
 When you build an APK, a dialog gives two options: locate or analyze. If the first one is chosen, Windows file explorer will be opened showing an APK that can be send using email. Download the APK on your phone and click it to install.
 
-image::../images/ionic-to-android/locate-apk.png["Steps to enable developer options: 4, 5, 6" ,width="300" link="../images/ionic-to-android/locate-apk.png"]
+image::images/ionic-to-android/locate-apk.png["Steps to enable developer options: 4, 5, 6" ,width="300" link="images/ionic-to-android/locate-apk.png"]
 
 == Result
 
 If everything goes correctly, the Ionic application will be ready to be tested.
 
-image::../images/ionic-to-android/real-device.png["Application running on a real device" ,width="300" link="../images/ionic-to-android/real-device.png"]
+image::images/ionic-to-android/real-device.png["Application running on a real device" ,width="300" link="images/ionic-to-android/real-device.png"]

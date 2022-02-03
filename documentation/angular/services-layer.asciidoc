@@ -40,7 +40,7 @@ There are two APIs for the components layer to interact with the services layer:
 To illustrate the fact the following figure shows an abstract overview.
 
 .Boundaries to components layer
-image::../images/components-layer-service-layer-boundaries.svg["Smart and Dumb Components Interaction", width="450", link="../images/components-layer-service-layer-boundaries.svg"]
+image::images/components-layer-service-layer-boundaries.svg["Smart and Dumb Components Interaction", width="450", link="images/components-layer-service-layer-boundaries.svg"]
 
 == Store
 
@@ -96,7 +96,7 @@ A use case service is a service which has methods to perform asynchronous state 
 In reactive terminology this would be an _Action of Actions_ - a thunk (`redux`) or an effect (`@ngrx`).
 
 .Use case services are the main API to trigger state transitions 
-image::../images/use-case-service.svg["Use Case Service", width="450", link="../images/use-case-service.svg"]
+image::images/use-case-service.svg["Use Case Service", width="450", link="images/use-case-service.svg"]
 
 A use case services method - an action - interacts with adapters, business services and stores.
 So use case services orchestrate whole use cases.
@@ -149,7 +149,7 @@ With this action there need to be multiple state updates.
 To handle this interaction in a scalable way we apply the following pattern. 
 
 .Smart Component interaction
-image::../images/smart-component-interaction-via-services-layer.svg["Interaction of Smart Components via services layer", width="450", link="../images/smart-component-interaction-via-services-layer.svg"]
+image::images/smart-component-interaction-via-services-layer.svg["Interaction of Smart Components via services layer", width="450", link="images/smart-component-interaction-via-services-layer.svg"]
 
 The state of interest is encapsulated inside a store. All _Smart Components_ interested in the state have to subscribe to the store's API served by the public observable. Thus, with every update to the store the subscribed components receive the new value. The components basically react to state changes. Altering a store can be done directly if the desired change is synchronous. Most actions are of asynchronous nature so the `UseCaseService` comes into play. Its actions are `void` methods, which implement a use case, i.e., adding a new item to the basket. It calls asynchronous actions and can perform multiple store updates over time.
 
@@ -158,7 +158,7 @@ To put this pattern into perspective the `UseCaseService` is a programmatic alte
 === Example
 
 .Smart Components interaction example
-image::../images/smart-smart-components-example.svg["Smart component interaction example", link="../images/smart-smart-components-example.svg", width="450"]
+image::images/smart-smart-components-example.svg["Smart component interaction example", link="images/smart-smart-components-example.svg", width="450"]
 
 The example shows two _Smart Components_ sharing the `FlightSearchState` by using the `FlightSearchStore`.
 The use case shown is started by an event in the _Smart Component_ `FlightSearchComponent`. The action `loadFlight()` is called. This could be submitting a search form.

@@ -35,7 +35,7 @@ The amount of code and effort needed to create such tests is a little higher.
 The following figure shows you an overview of the application architecture divided in testing areas.
 
 .Testing Areas
-image::../images/testing-areas.svg["Testing Areas", width="450", link="../images/testing-areas.svg"]
+image::images/testing-areas.svg["Testing Areas", width="450", link="images/testing-areas.svg"]
 
 There are three areas, which need to be covered by different testing strategies.
 

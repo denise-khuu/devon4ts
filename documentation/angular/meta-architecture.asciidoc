@@ -43,14 +43,14 @@ The technical infrastructure architecture is out of scope for this document and 
 
 The following gives a complete overview of the proposed reference architecture. It will be built up incrementally in the following sections.
  
-image::../images/devonfw-methodology/OASP_ClientArchitecture_CompleteOverview.png[Complete Client Architecture Overview, width="450", link="../images/devonfw-methodology/OASP_ClientArchitecture_CompleteOverview.png"]
+image::images/devonfw-methodology/OASP_ClientArchitecture_CompleteOverview.png[Complete Client Architecture Overview, width="450", link="images/devonfw-methodology/OASP_ClientArchitecture_CompleteOverview.png"]
 _Figure 1 Overview_
 
 === Client Architecture
 
 On the highest level of abstraction we see the need to differentiate between dialog components and their container they are managed in, as well as the access to the application server being the back-end for the client (e.g. an devon4j instance). This section gives a summary of these components and how they relate to each other. Detailed architectures for each component will be supplied in subsequent sections
  
-image::../images/devonfw-methodology/OASP_ClientArchitecture_Overview.png[Client Architecture Overview, width="450", link="../images/devonfw-methodology/OASP_ClientArchitecture_Overview.png"]
+image::images/devonfw-methodology/OASP_ClientArchitecture_Overview.png[Client Architecture Overview, width="450", link="images/devonfw-methodology/OASP_ClientArchitecture_Overview.png"]
 _Figure 2 Overview of Client Architecture_
 
 ==== Dialog Component
@@ -84,7 +84,7 @@ Dialogs will require a back-end application server in order to execute their bus
 
 The dialog container can be further structured into the following components with their respective tasks described in own sections:
  
-image::../images/devonfw-methodology/OASP_ClientArchitecture_DialogContainer.png[Dialog Container Architecture Overview, width="450", link="../images/devonfw-methodology/OASP_ClientArchitecture_DialogContainer.png"]
+image::images/devonfw-methodology/OASP_ClientArchitecture_DialogContainer.png[Dialog Container Architecture Overview, width="450", link="images/devonfw-methodology/OASP_ClientArchitecture_DialogContainer.png"]
 _Figure 3 Dialog Container Architecture_
 
 ==== Application
@@ -127,7 +127,7 @@ A dialog component has to support all or a subset of the following tasks: +
 
 Following the principle of separation of concerns, we further structure a dialog component in an own architecture allowing us the distribute responsibility for these tasks along the defined components:
  
-image::../images/devonfw-methodology/OASP_ClientArchitecture_DialogComponent.png[Dialog Component Architecture, width="450", link="../images/devonfw-methodology/OASP_ClientArchitecture_DialogComponent.png"]
+image::images/devonfw-methodology/OASP_ClientArchitecture_DialogComponent.png[Dialog Component Architecture, width="450", link="images/devonfw-methodology/OASP_ClientArchitecture_DialogComponent.png"]
 _Figure 4 Overview of dialog component architecture_
 
 ==== Presentation Layer
@@ -156,7 +156,7 @@ The dialog core layer should not depend on the presentation layer enforcing a st
 
 Dialog components can interact in the following ways:
 
-image::../images/devonfw-methodology/OASP_ClientArchitecture_DialogInteractions.png[Dialog Interactions, width="450", link="../images/devonfw-methodology/OASP_ClientArchitecture_DialogInteractions.png"]
+image::images/devonfw-methodology/OASP_ClientArchitecture_DialogInteractions.png[Dialog Interactions, width="450", link="images/devonfw-methodology/OASP_ClientArchitecture_DialogInteractions.png"]
 
 * *Embedding of dialog components* +
 As already said dialog components can be hierarchically composed. This composition works by embedding on dialog component within the other. Apart from the life-cycle managed by the dialog container, the embedding needs to cope for the visual embedding of the presentation and core layer.
