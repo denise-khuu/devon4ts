@@ -2,6 +2,8 @@
 ** link:guide-package-managers[Package Managers]
 ** link:guide-npm-yarn-workflow[Package Managers Workflow]
 ** link:guide-yarn-2-support[Yarn 2 Support]
+** link:guide-angular-libraries[Angular Libraries]
+** link:guide-nestjs-libraries[NestJS Libraries]
 
 === Angular
 ** Architecture
