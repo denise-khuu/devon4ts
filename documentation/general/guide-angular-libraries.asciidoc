@@ -31,8 +31,6 @@ We have listed some links to UI libraries and common requested feature component
 **  Grids/Data Tables
 *** https://www.ag-grid.com/angular-data-grid/
 *** https://github.com/swimlane/ngx-datatable - docs at https://swimlane.gitbook.io/ngx-datatable/
-
-== Check data grids from mentioned UI libraries
 ** Charts
 *** https://github.com/xieziyu/ngx-echarts - Angular wrapper of https://echarts.apache.org/en/index.html
 *** https://github.com/swimlane/ngx-charts - docs https://swimlane.gitbook.io/ngx-charts/
