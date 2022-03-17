@@ -1,0 +1,107 @@
+:toc: macro
+
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+toc::[]
+:idprefix:
+:idseparator: -
+:reproducible:
+:source-highlighter: rouge
+:listing-caption: Listing
+
+= Nx Build System
+
+Nx is a smart, fast and extensible build system with first class **monorepo** support and powerful integrations. 
+
+video::-OmQ-PaSY5M[youtube]
+
+NOTE: If you are interested in understanding what a monorepo is about please check https://monorepo.tools/.
+
+== Philosophy
+
+Nx has a similar design philosophy to Visual Studio Code. Code is a powerful text editor, and you can be very productive with it even if you don't install any extensions. The ecosystem of VSCode's extensions though is what can really level up your productivity.
+
+Nx is similar. The core of Nx is generic, simple, and unobtrusive. Nx plugins, although very useful for many projects, are completely optional.
+
+Most examples on this site use Nx plugins. It's just easier to demonstrate many features Nx offers when Nx generates all the boilerplate. However, the vast majority of the features will work the same way in a workspace with no plugins.
+
+== Getting started with Nx
+
+The core of Nx is generic, simple, and unobtrusive. Nx plugins, although very useful for many projects, are completely optional. Most large Nx workspaces use plugins for some things and don't use plugins for others.
+
+=== Creating a New Workspace
+
+Running `npx create-nx-workspace@latest --preset=core` creates an Nx empty workspace and `npx create-nx-workspace --preset=ts` creates it with TypeScript tooling included.
+
+This is what is generated:
+
+[source]
+----
+nx_workspace_name/
+├──packages/
+├──nx.json
+├──workspace.json
+├──tsconfig.base.json
+└──package.json
+----
+
+`package.json` contains Nx packages.
+
+[source,json]
+----
+{
+  "name": "myorg",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "nx": "12.8.0",
+    "@nrwl/workspace": "12.8.0",
+    "@types/node": "14.14.33",
+    "typescript": "~4.3.5"
+  }
+}
+----
+
+`nx.json` contains the Nx CLI configuration.
+
+[source,json]
+----
+{
+  "extends": "@nrwl/workspace/presets/core.json",
+  "npmScope": "myorg",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  }
+}
+----
+
+=== Installing Nx globally
+
+Alternatively to `npx`, you can install Nx CLI globally in your system using the following command:
+
+[source, shell]
+----
+npm install -g nx
+----
+
+From now on you can run `nx` from anywhere in your system.
+
+== Conclusion
+
+In this guide you learned how to create a Nx workspace without plugins using Nx Core. You can read more about using Nx at https://nx.dev/getting-started/nx-core and in general at https://nx.dev/. 
+
+Please check link:guide-creating-angular-app-with-nx-cli[Creating an Angular App with Nx CLI] for more information on how to create an Angular app using Nx.
+
