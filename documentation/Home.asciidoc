@@ -30,6 +30,7 @@ Web Application development is a very difficult task since there are a lot of di
 
 This section introduces concepts to help developers with the tooling and package managers.
 
+* link:guide-nvm-workflow[Node Version Manager (NVM) workflow]
 * link:guide-package-managers[Package Managers]
 * link:guide-npm-yarn-workflow[Package Managers Workflow]
 * link:guide-yarn-2-support[Yarn 2 Support]
@@ -39,6 +40,7 @@ This section introduces concepts to help developers with the tooling and package
 This is the main section of the documentation, where the developer will find guidelines for accessibility, how to use the Angular toolchain, how to refactor components, create libraries and, in general, maintain Angular applications. But last and not least, developers will also find solutions to common problems many of the Angular projects may have. 
 
 ==== Architecture
+
 * link:architecture[Architecture Overview]
   
 This section introduces in an easy way the main principles and guidelines based on Angular Style Guide.
@@ -99,8 +101,9 @@ As part of the devon4ng stack, we include a small section to explain how to deve
 * link:guide-ionic-pwa[Ionic Progressive Web Apps]
 
 === Nx
-We have included a small section to explain how we can get started with the Nx CLI in an Angular Application.
+We have included a small section to explain how we can get started with the Nx CLI.
 
+* link:guide-nx-workflow[Nx Monorepo Workflow]
 * link:guide-creating-angular-app-with-nx-cli[Starting with Nx CLI in Angular]
 
 === NestJS backend:

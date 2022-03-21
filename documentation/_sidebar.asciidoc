@@ -1,9 +1,8 @@
 === General
+** link:guide-nvm-workflow[Node Version Manager (NVM) Workflow]
 ** link:guide-package-managers[Package Managers]
 ** link:guide-npm-yarn-workflow[Package Managers Workflow]
 ** link:guide-yarn-2-support[Yarn 2 Support]
-** link:guide-angular-libraries[Angular Libraries]
-** link:guide-nestjs-libraries[NestJS Libraries]
 
 === Angular
 ** Architecture
@@ -40,6 +39,8 @@
 *** link:guide-upgrade-devon4ng[Upgrade devon4ng applications]
 *** link:guide-working-with-angular-cli[Working with Angular CLI]
 *** link:guide-layout-with-angular-material[Angular Material Layout]
+** Resources
+*** link:guide-angular-libraries[Angular Libraries]
 
 === Ionic
 ** link:guide-ionic-getting-started[Ionic Getting started]
@@ -47,6 +48,7 @@
 ** link:guide-ionic-pwa[Ionic Progressive Web Apps]
 
 === Nx
+** link:guide-nx-workflow[Nx Monorepo Workflow]
 ** link:guide-creating-angular-app-with-nx-cli[Starting with Nx CLI in Angular]
 
 === NestJS backend:
@@ -72,5 +74,8 @@
 ** devon4node applications
 *** link:samples.asciidoc[devon4node Samples]
 *** link:samples-step-by-step.asciidoc[devon4node Sample Step by Step]
+** Resources
+** link:guide-nestjs-libraries[NestJS Libraries]
+
 
 
