@@ -278,3 +278,24 @@ const routes: Routes = [
   { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule', canLoad: [ExampleCanLoadGuard] }
 ];
 ----
+
+== Enable tracing
+
+You can enable router tracing by adding an additional parameter to the `forRoot()` method which allows specifying certain routing options as required.
+
+.Enbale router tracing
+[source,ts]
+----
+...
+@NgModule({
+  imports: [
+    RouterModule.forRoot(
+      routes,
+      { enableTracing: true }, // <-- debugging purposes only
+    ),
+  ],
+  exports: [RouterModule],
+})
+----
+
+Setting `enableTracing` to `true` logs all the router events to the browser console. This could be useful for debugging during development.
