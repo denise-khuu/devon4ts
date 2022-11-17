@@ -15,6 +15,10 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
+
+'''
+
 = Internationalization
 
 Nowadays, a common scenario in front-end applications is to have the ability to translate labels and locate numbers, dates, currency and so on when the user clicks over a language selector or similar. devon4ng and specifically Angular has a default mechanism in order to fill the gap of such features, and besides there are some wide used libraries that make even easier to translate applications.

@@ -15,6 +15,10 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
+
+'''
+
 = Dependency Injection
 
 The link:https://en.wikipedia.org/wiki/Dependency_injection[dependency injection] is a well-known common design pattern applied by frameworks in all languages, like link:https://spring.io/[Spring] in Java, link:https://angular.io/[Angular] and others. The intention of this page is not to explain how dependency injection works, but instead how it is addressed by NestJS.
