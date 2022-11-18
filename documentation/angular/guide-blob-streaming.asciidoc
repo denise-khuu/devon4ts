@@ -1,7 +1,3 @@
-WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
-
-'''
-
 = Angular File Uploading
 
 This sample demonstrates how to upload a file to a server. For this, we will need to use an Angular form. In this case we have chosen a simple template-driven form, as the goal of this sample is just to show the process to upload a file. You can learn more about Forms in Angular in the https://angular.io/guide/forms-overview[official documentation].

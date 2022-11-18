@@ -15,10 +15,6 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
-
-'''
-
 = Logger
 
 When you create a new devon4node application, it already has a logger: `src/app/shared/logger/winston.logger.ts`. This logger provide the methods `log`, `error` and `warn`. All of those methods will write a log message, but with a different log level.

@@ -15,10 +15,6 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
-
-'''
-
 = devon4node Samples
 
 In the folder /samples, you can find some devon4node examples that could be useful for you in order to understand better the framework.

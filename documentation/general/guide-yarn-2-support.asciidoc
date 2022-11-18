@@ -15,10 +15,6 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
-
-'''
-
 = Yarn 2
 
 Yarn v2 is a very different software from the v1. The following list contains the main new features:

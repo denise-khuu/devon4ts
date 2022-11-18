@@ -15,10 +15,6 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
-
-'''
-
 == Add Electron to an Angular application using Angular CLI
 This cookbook recipe explains how to integrate Electron in an Angular 10+ application. https://electronjs.org/[Electron] is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS. As an example, very well known applications as Visual Studio Code, Atom, Slack or Skype (and many more) are using Electron too. 
 
