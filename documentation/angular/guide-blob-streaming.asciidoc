@@ -1,11 +1,15 @@
 = Angular File Uploading
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This sample demonstrates how to upload a file to a server. For this, we will need to use an Angular form. In this case we have chosen a simple template-driven form, as the goal of this sample is just to show the process to upload a file. You can learn more about Forms in Angular in the https://angular.io/guide/forms-overview[official documentation].
 
 NOTE: The back-end implementation for this sample is located here: https://github.com/devonfw-sample/devon4j-blob-streaming[
 devon4j-blob-streaming]
 
 == `FormData`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 `FormData` is an object where you can store key-value pairs that allows you to send through `XMLHttpRequest`. You can create a `FormData` object as simply as:
 
@@ -18,6 +22,8 @@ formData.append('key', value);
 ----
 
 == Let's begin
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 I assume you already have your angular application running, if not, you can have a look to our  `AngularBasicPWA` sample      
 include::guide-angular-pwa[leveloffset=2]
 
@@ -26,6 +32,8 @@ We are going to use Angular Material components, so it is necessary to install t
 `npm install --save @angular/material @angular/cdk @angular/animations`
 
 == Importing necessary components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 These are the component I am going to use for our sample, are material HTML components. For use the template-driven form you do not need to import any component. I am going to create a module called Core where I place the needed imports. After that, I will import Core module on my main App module, and I be able to use these components in any part of my application.
 
@@ -79,6 +87,8 @@ Then, in the app.component.html we need to add the selector for our new componen
 Now, our new component `uploader` will be loaded in the root page. Let's add some code to it.
 
 == Uploader component
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 I will begin editing the html file. First thing we need is an input component, which will allow us to select the file to upload. Furthermore, I added a button which will be the responsible of calling the upload file window. Apart from this, there is also two labels and a progress bar. Labels will give feedback about file upload request, both with an `if` clause with `uploadSuccess` and `uploadFail` global variables that will be in `uploader.component.ts`. The progress bar will show the progress of the file being uploaded.
 

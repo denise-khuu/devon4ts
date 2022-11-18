@@ -17,9 +17,13 @@ toc::[]
 
 = nvm: the node version manager
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell. nvm works on any POSIX-compliant shell (sh, dash, ksh, zsh, bash), in particular on these platforms: unix, macOS, and windows WSL.
 
 == Installing and Updating
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To install or update nvm, you should run the install script. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
 
@@ -39,6 +43,8 @@ More info at https://github.com/nvm-sh/nvm#install--update-script.
 
 == Windows version 
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 IMPORTANT: Uninstall any pre-existing node.js installation. Windows users should use the Windows installer.
 
 nvm-windows is similar to nvm but not identical. The installer can be downloaded from link:https://github.com/coreybutler/nvm-windows/releases[here].
@@ -46,6 +52,8 @@ nvm-windows is similar to nvm but not identical. The installer can be downloaded
 More info at https://github.com/coreybutler/nvm-windows. 
 
 == Usage
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To download, compile, and install the latest release of node, do this:
 
@@ -74,6 +82,8 @@ nvm alias default lts/* # "lts/*" is an alias for the latest LTS version
 More info at https://github.com/nvm-sh/nvm#usage. 
 
 == .nvmrc
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 You can create a `.nvmrc` file containing a node version number (or any other string that nvm understands; see `nvm --help` for details) in the project root directory (or any parent directory). Afterwards, `nvm use`, `nvm install`, `nvm exec`, `nvm run`, and `nvm which` will use the version specified in the `.nvmrc` file if no version is supplied on the command line.
 

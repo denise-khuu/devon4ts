@@ -17,9 +17,13 @@ toc::[]
 
 = Validation
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 To be sure that your application will works well, you must validate any input data. devon4node by default provides a `ValidationPipe`. This `ValidationPipe` is the responsible of validate the request input and, if the input do not pass the validation process, it returns a `400 Bad Request` error.
 
 == Defining Validators
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The `ValidationPipe` needs to know how to validate the input. For that purpose we use the `class-validator` package. This package allows you to define the validation of a class by using decorators.
 

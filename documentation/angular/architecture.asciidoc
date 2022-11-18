@@ -17,6 +17,8 @@ toc::[]
 
 = Architecture
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The following principles and guidelines are based on Angular Style Guide - especially Angular modules (see https://angular.io/guide/ngmodule[Angular Docs]).
 It extends those where additional guidance is needed to define an architecture which is:
 
@@ -27,6 +29,8 @@ It extends those where additional guidance is needed to define an architecture w
 * gives as much guidance as necessary and as little as possible
 
 == Overview
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 When using Angular the web client architecture is driven by the framework in a certain way Google and the Angular community think about web client architecture.
 Angular gives an opinion on how to look at architecture.
@@ -43,6 +47,8 @@ Angular or Angular Style Guide give no guidance on how to structure a module int
 This is where this architecture comes in.
 
 === Layers
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The architecture describes two layers. The terminology is based on common language in web development.
 
@@ -64,6 +70,8 @@ Methods of use case services are the API for _Smart Components_.
 Those methods are _Actions_ in reactive terminology.
 
 === Modules
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Angular requires a module called _app_ which is the main entrance to an application at runtime - this module gets bootstrapped.
 Angular Style Guide defines feature modules and two special modules - https://angular.io/guide/ngmodule#the-core-module[_core_] and https://angular.io/guide/ngmodule#shared-module[_shared_]. 

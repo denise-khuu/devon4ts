@@ -17,12 +17,16 @@ toc::[]
 
 = Angular Material Layout
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The purpose of this guide is to get a basic understanding of creating layouts using https://material.angular.io[Angular Material] in a devon4ng application. We will create an application with a header containing some menu links and a sidenav with some navigation links.
 
 .This is what the finished application will look like
 image::images/layout-angular-material/1-finished-application.png["Finished application", width="700", link="images/layout-angular-material/1-finished-application.png", align="center"]
 
 == Create a new angular application
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 We start with opening the devonfw IDE(right-click anywhere in your workspace and click "Open devonfw CMD shell here") and running the following command to start a project named devon4ng-mat-layout
 
@@ -40,6 +44,8 @@ Angular will spin up a server and you can check your application by visiting htt
 image::images/layout-angular-material/2-blank-application.png["Blank application", width="700", link="images/layout-angular-material/2-blank-application.png", align="center"]
 
 == Adding Angular Material library to the project
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Next we will add Angular Material to our application. In the integrated terminal, press `Ctrl + C` to terminate the running application and run the following command:
 
@@ -90,8 +96,12 @@ A better approach is to import and then export all the required components in a 
 
 [NOTE]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
   You can find a working copy of this application https://github.com/devonfw-sample/devon4ts-samples/tree/master/apps/angular-material-basic-layout[here]. The sample application is part of a Nx workspace, which means it is one of the many apps in a monorepo and capable of importing reusable code from a shared library. This guide describes the implementaion by assuming a stand-alone single-repo application, but the pages and layout described in this sample app are similar to the ones used in another sample app in the monorepo (https://github.com/devonfw-sample/devon4ts-samples/tree/master/apps/angular-material-theming[angular-material-theming]), which is why we have exported the required components from a shared library and reused them in both the apps. As a result, the code in our monorepo will be slightly different. It would still help you in following this guide.
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Next, we include a theme in our application. Angular Material comes with four pre-defined themes: `indigo-pink`, `deeppurple-amber`, `pink-bluegrey` and `purple-green`. It is also possible to create our own custom theme, but that is beyond the scope of this guide. Including a theme is required to apply all of the core and theme styles to your application.
 We will include the indigo-pink theme in our application by importing the `indigo-pink.css` file in our `src/styles.scss`:
@@ -109,6 +119,8 @@ To use https://material.io/icons/[Material Design Icons] along with the `mat-ico
 ```
 
 == Development
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Now that we have all the Angular Material related dependencies set up in our project, we can start coding. Let's begin by adding a suitable `margin` and `font` to the `body` element of our single page application. We will add it in the `src/styles.scss` file to apply it globally:
 
@@ -363,6 +375,8 @@ image::images/layout-angular-material/9-finished.png["Finished application", wid
 
 
 == Conclusion
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The purpose of this guide was to provide a basic understanding of creating layouts with Angular Material. The Angular Material library has a huge collection of ready to use components which can be found at https://material.angular.io/components/categories
 It has provided documentation and example usage for each of its components.  Going through the documentation will give a better understanding of using Angular Material components in our devon4ng applications.

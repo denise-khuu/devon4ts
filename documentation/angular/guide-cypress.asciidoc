@@ -17,6 +17,8 @@ toc::[]
 
 = Testing e2e with Cypress
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This guide will cover the basics of e2e testing using Cypress.
 
 Cypress is a framework “all in one” that provides the necessary libraries to write specific e2e tests, without the need of Selenium.
@@ -28,6 +30,8 @@ Why Cypress?
 * Easy cross browser testing
 
 == Setup
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 **Install**
 First of all we need to install it, we can use `npm install`:
@@ -82,6 +86,8 @@ Let's setup the base URL so when we run the tests cypress will "navigate" to the
 
 == Files / Structure
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 [source, TypeScript]
 ----
 /cypress
@@ -113,11 +119,17 @@ Let's setup the base URL so when we run the tests cypress will "navigate" to the
 
 =====
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 If you are using Nx, it automatically generates a e2e cypress project for every project that you generate. So you already get the configuration files like `tsconfig.json` and `cypress.json` and also get the folder structure described above. This helps you focus more on writing your tests rather than setting up Cypress.
 
 =====
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 == Tests
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The structure is the same than Mocha.
 
@@ -156,6 +168,8 @@ On link:https://github.com/cypress-io/cypress-example-kitchensink[kitchensink]
 you can find an official cypress demo with all the commands being used.
 
 == Fixtures
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 We use fixtures to mock data, it can be a json, an image, video...
 
@@ -200,6 +214,8 @@ For more info check link:https://docs.cypress.io/api/commands/fixture.html#Synta
 
 == Request / Route
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 With cypress you can test your application with real data or with mocks.
 
 Not using mocks guarantees that your tests are real e2e test but makes them vulnerable to external issues.
@@ -209,6 +225,8 @@ To get more information go to link:https://docs.cypress.io/guides/guides/network
 
 
 === Route
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Cypress can intercept a XHR request and interact with it.
 
@@ -265,6 +283,8 @@ We get `boxFruit` data from the box fixture and then we mock the API call with i
 When the button is clicked, it waits to receive the response of the call and then checks if the list contains one of the elements of the `fruitBox`.
 
 === Request
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Make a HTTP request.
 
 [source, TypeScript]
@@ -303,6 +323,8 @@ cy.request({
 ----
 
 == Custom commands
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 If you see yourself writing the same test more than once (login is a common one), you can create a custom command to make things faster.
 
@@ -348,6 +370,8 @@ Check link:https://docs.cypress.io/guides/tooling/typescript-support.html#Types-
 
 == Cross browser testing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 By default the browser used by Cypress is Chrome, it has compatibility with it's family browsers (including Microsoft Edge) and has beta support for Mozilla Firefox.
 
 To change the browser on the panel we can do it by selecting the desired one on the browsers tab before running the spec file.
@@ -381,6 +405,8 @@ const runTests= async ()=>{
 https://docs.cypress.io/guides/guides/cross-browser-testing.html#Continuous-Integration-Strategies[Cypress documentation]
 
 == Viewport
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Cypress allow us to create tests depending on the Viewport, so we can test responsiveness.
 
@@ -426,6 +452,8 @@ https://docs.cypress.io/api/commands/viewport.html#Syntax[Viewport documentation
 
 == Test retries
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 We can get false negatives intermittently due external issues that can affect our tests, because of that we can add, in the configuration, a retries entry so Cypress can run again a certain failed test the selected number of times to verify that the error is real.
 
 We can set retries for run or open mode.
@@ -461,11 +489,15 @@ Check more on https://docs.cypress.io/guides/guides/test-retries.html#Introducti
 
 == Reporter
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The tests results appear on the terminal, but to have a more friendly view we can add a reporter.
 
 image::./images/cypress/reporter.jpg[]
 
 === Mochawesome
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In this case we are going to use Mochawesome, initially its a Mocha reporter but as Cypress uses Mocha it works the same.
 

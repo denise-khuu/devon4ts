@@ -16,14 +16,20 @@ toc::[]
 :listing-caption: Listing
 
 = Angular Mock Service
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 We've all been there: A new idea comes, let's quickly prototype it. But wait, there's no back-end. What can we do? 
 
 Below you will find a solution that will get your started quick and easy. The idea is to write a simple mock service that helps us by feeding data into our components.
 
 == The app we start with
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Let's say you have a simple boilerplate code, with your favorite styling library hooked up and you're ready to go. The https://github.com/devonfw-sample/devon4ts-samples/tree/master/apps/angular-material-basic-layout[angular-material-basic-layout] sample is a good starting place. 
 
 == The Components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Components - are the building blocks of our application. Their main role is to enable fragments of user interfaces. They will either display data (a list, a table, a chart, etc.), or 'collect' user interaction (e.g: a form, a menu, etc.)
 
 Components stay at the forefront of the application. They should also be reusable (as much as possible). Reusability is key for what we are trying to achieve - a stable, maintainable front-end where multiple people can contribute and collaborate. 
@@ -35,6 +41,8 @@ In our project, we are at the beginning. That means we may have more ideas than 
 https://github.com/devonfw/devon4ng/wiki/components-layer[Learn more about Angular Components]
 
 == The Service
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 So, how do we get data in our app? How do we propagate the data to the components and how can we send user interaction from the components to the our data "manager" logic. 
 
 The answer to all these questions is an Angular Service (that we will just call a service from now on). 
@@ -51,6 +59,8 @@ Still, our ideas drive in different ways, so we have to stay flexible. We cannot
 https://github.com/devonfw/devon4ng/wiki/services-layer[Learn more about Angular Services]
 
 == The Model
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 [[id_data_box]]
 .Data box in relation to services and components.
@@ -69,6 +79,8 @@ Aligned with the Angular way of development, we are implementing a model-view-co
 The *model* is represented by the interfaces we make. These interfaces describe the data structures we will use in our application. In this example, there is one data model, corresponding with the 'type' of data that was mocked. In the models folder you will find the .ts script file that describes chemical elements. The corresponding mock file defines a set is chemical elements objects, in accordance to our interface definition. 
 
 == Use case
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Enough with the theory, let's see what we have here. The app presents 3 pages as follows:
 
 * A leader board with the top 3 elements

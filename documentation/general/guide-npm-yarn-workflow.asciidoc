@@ -17,7 +17,11 @@ toc::[]
 
 = Package Managers Workflow
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 == Introduction
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 // v1.0, 2017-11,
 
@@ -33,6 +37,8 @@ For more comprehensive information visit https://docs.npmjs.com/getting-started/
 
 === Package.json
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Dependencies in your project are stored in a file called package.json. Every package.json must contain, at least, the name and version of your project.
 
 Package.json is located in the root of your project.
@@ -46,6 +52,8 @@ If you wish to learn more information about package.json, click on the following
 * https://docs.npmjs.com/getting-started/using-a-package.json[npm Package.json]
 
 ==== Content of package.json
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 As you noticed, package.json is a really important file in your project. It contains essential information about our project, therefore you need to understand what's inside.
 
@@ -127,6 +135,8 @@ Here is the link to an in-depth explanation of https://yarnpkg.com/en/docs/depen
 
 ==== Scripts
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Scripts are a great way of automating tasks related to your package, such as simple build processes or development tools.
 
 For example:
@@ -163,6 +173,8 @@ Or you can go back to
 
 === Managing dependencies
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to manage dependencies we recommend using package managers in your projects.
 
 A big reason is their usability. Adding or removing a package is really easy, and by doing so, packet manager update the package.json and copies (or removes) the package in the needed location, with a single command.
@@ -172,6 +184,8 @@ Another reason, closely related to the first one, is reducing human error by aut
 Two of the package managers you can use in NodeJS projects are "yarn" and "npm". While you can use both, we encourage you to use only one of them while working on projects. Using both may lead to different dependencies between members of the team.
 
 ==== npm
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 We'll start by installing npm following this small guide https://docs.npmjs.com/getting-started/installing-node[here].
 
@@ -279,6 +293,8 @@ More information is provided by the npm team at https://docs.npmjs.com/files/pac
 
 ==== Yarn
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Yarn is an alternative to npm, if you wish to install yarn follow the guide https://yarnpkg.com/en/docs/install[getting started with yarn] and download the correct version for your operative system. NodeJS is also needed you can find it https://nodejs.org/en/[here].
 
 *Working with yarn*
@@ -363,6 +379,8 @@ You can learn more about yarn.lock here: https://yarnpkg.com/en/docs/yarn-lock[y
 
 ==== Global package
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Global packages are packages installed in your operative system instead of your local project, 
 global packages useful for developer tooling that is not part of any individual project but instead is used for local commands.
 
@@ -378,6 +396,8 @@ https://docs.npmjs.com/getting-started/installing-npm-packages-globally[Global n
 https://yarnpkg.com/lang/en/docs/cli/global/[Global yarn]
 
 ==== Package version
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Dependencies are critical to the success of a package. You must be extra careful about
 which version packages are using, one package in a different version may break your code.
@@ -443,6 +463,8 @@ You can learn more about this in https://yarnpkg.com/en/docs/dependency-versions
 
 === Problems you may encounter
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 If you can't find package.json, you may have deleted the one you had previously, 
 which means you have to download the package.json from the repository. 
 In the case you are creating a new project you can create a new package.json. More information
@@ -473,6 +495,8 @@ there is a solution to a problematic update to one package.
 A list of common errors of npm can be found in: https://docs.npmjs.com/troubleshooting/common-errors[npm errors]
 
 ==== Recomendations
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Use yarn *or* npm in your project, reach an agreement with your team in order to choose one, this will avoid
 undesired situations like forgetting to upload an updated yarn.lock or package-lock.json.

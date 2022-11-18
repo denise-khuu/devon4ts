@@ -17,9 +17,13 @@ toc::[]
 
 = Controller Layer
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The controller layer is responsible for handling the requests/responses to the client. This layer knows everything about the endpoints exposed, the expected input (and also link:guides-validation[validate] it), the response schema, the HTTP codes for the response and the HTTP errors that every endpoint can send.
 
 == How to implement the controller layer
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This layer is implemented by the link:https://docs.nestjs.com/controllers[NestJS controllers]. Let's see how it works with an example:
 
@@ -53,9 +57,13 @@ Finally, if the service layer throws an error, this handler will catch it and re
 
 == Validation
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to do not propagate errors in the incoming payload, we need to validate all data in the controller layer. See the link:guides-validation[validation guide] for more information.
 
 == Error handling
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In the previous example, we catch all errors using the try/catch statement. This is not the usual implementation. In order to catch properly the errors you must use the link:https://docs.nestjs.com/exception-filters[exception filters]. Example:
 

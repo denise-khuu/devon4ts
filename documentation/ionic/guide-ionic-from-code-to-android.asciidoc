@@ -17,9 +17,13 @@ toc::[]
 
 = Ionic to android
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This page is written to help developers to go from the source code of an ionic application to an android one, with this in mind, topics such as: environment, commands, modifications,...  are covered.
 
 == Assumptions
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This document assumes that the reader has already:
 
@@ -29,6 +33,8 @@ This document assumes that the reader has already:
 ** Android Studio and Android SDK.
 
 == From Ionic to Android project
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 When a native application is being designed, sometimes, functionalities that uses camera, geolocation, push notification, ... are requested. To resolve these requests, Capacitor can be used.
 
@@ -44,6 +50,8 @@ Then, it is necessary to initialize capacitor with some information: app id, nam
 ** `npx cap init`
 
 === Modifications
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Throughout the development process, usually back-end and front-end are on a local computer, so it's a common practice to have different configuration files for each environment (commonly production and development). Ionic uses an angular.json file to store those configurations and some rules to be applied.
 
@@ -73,6 +81,8 @@ image::images/ionic-to-android/environments.png["Android environment and angular
 
 === Build
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Once configured, it is necessary to build the Ionic app using this new configuration:
 
 * `ionic build --configuration=android`
@@ -85,6 +95,8 @@ The next commands copy the build application on a folder named android and open 
 
 
 == From Android project to emulated device
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Once Android Studio is opened, follow these steps:
 
@@ -127,6 +139,8 @@ image::images/ionic-to-android/new-phone-created.png["New created device",width=
 
 == From Android project to real device
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 To test on a real android device, an easy approach to communicate a smartphone (front-end) and computer (back-end) is to configure a WiFi hotspot and connect the computer to it. A guide about this process can be found at https://support.google.com/nexus/answer/9059108?hl=en
 
 Once connected, run `ipconfig` on a console if you are using windows or `ifconfig` on a linux machine to get the IP address of your machine's Wireless LAN adapter WiFi.
@@ -140,6 +154,8 @@ image::images/ionic-to-android/new-backend-url.PNG["Android environment file ser
 After this configuration, follow the build steps in "From Ionic to Android project" and the first three steps in "From Android project to emulated device".
 
 === Send APK to Android through USB
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To send the built application to a device, you can connect computer and mobile through USB, but first, it is necessary to unlock developer options.
 
@@ -160,11 +176,15 @@ After this, do the step four in "From Android project to emulated device" and ch
 
 === Send APK to Android through email
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 When you build an APK, a dialog gives two options: locate or analyze. If the first one is chosen, Windows file explorer will be opened showing an APK that can be send using email. Download the APK on your phone and click it to install.
 
 image::images/ionic-to-android/locate-apk.png["Steps to enable developer options: 4, 5, 6" ,width="300" link="images/ionic-to-android/locate-apk.png"]
 
 == Result
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 If everything goes correctly, the Ionic application will be ready to be tested.
 

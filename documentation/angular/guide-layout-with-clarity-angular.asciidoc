@@ -17,6 +17,8 @@ toc::[]
 
 = Angular Clarity Layout
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The purpose of this guide is to get a basic understanding of creating layouts Angular Clarity in a devon4ng application. https://clarity.design/[Angular Clarity] is a HTML/CSS framework.
 
 
@@ -25,6 +27,8 @@ image::images/angular-clarity-layout/1.png[]
 
 
 == Let's begin
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 We start with opening the console(in the Devon distribution folder) and running the following command to start a project named `AngularZorroLayout`.
 
@@ -42,6 +46,8 @@ Angular will spin up a server and you can check your application by visiting htt
 image::images/angular-clarity-layout/2.png[]
 
 ==  Adding Angular Clarity framework to the project
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Next we will add Angular Clarity to our application. In the integrated terminal, press CTRL + C to terminate the running application and run the following command:
 
@@ -75,6 +81,8 @@ export class AppModule { }
 image::images/angular-clarity-layout/3.png[]
 
 == Development
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 After installed the library we can start to develop the code.
 

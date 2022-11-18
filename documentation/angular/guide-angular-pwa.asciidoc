@@ -17,6 +17,8 @@ toc::[]
 
 = Angular Progressive Web App
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Progressive web applications (PWA) are web application that offer better user experience than the traditional ones. In general, they solve problems related with reliability and speed:
 
 * _Reliability_:  PWA are stable. In this context stability means than even with slow connections or even with no network at all, the application still works. To achieve this, some basic resources like styles, fonts, requests, ... are stored; due to this caching, it is not possible to assure that the content is always up-to-date.
@@ -26,6 +28,8 @@ PWA uses a script called https://developers.google.com/web/fundamentals/primers/
 
 == Assumptions
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This guide assumes that you already have installed:
 
 * NodeJS
@@ -34,6 +38,8 @@ This guide assumes that you already have installed:
 
 == Sample Application
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 .Basic angular PWA.
 image::images/angular/angular-pwa/mts-pwa-rec.png["My Thai Star recommendation", width=800 link="images/angular/angular-pwa/mts-pwa-rec.png"]
 
@@ -41,9 +47,13 @@ To explain how to build PWA using angular, a basic application is going to be bu
 
 === Step 1: Create a new project
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This step can be completed with one simple command using the Angular CLI: `ng new <name>`, where `<name>` is the name for the app. In this case, the app is going to be named `*basic-ng-pwa*`. If you are using Nx CLI, you can use the command `nx generate @nrwl/angular:app <name>` in your Nx workspace. You can follow https://github.com/devonfw/devon4ng/wiki/guide-creating-angular-app-with-nx-cli[this guide] if you want to get started with Nx workspace.
 
 === Step 2: Create a service
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Web applications usually uses external resources, making necessary the addition of services which can get those resources. This application gets a dish from My Thai Star's back-end and shows it. To do so, a new service is going to be created.
 
@@ -95,6 +105,8 @@ To retrieve data with this service, you have to import the module `HttpClient` a
 
 === Step 3: Use the service
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The component `AppComponent` implements the interface `OnInit` and inside its method `ngOnInit()` the subscription to the services is done. When a dish arrives, it is saved and shown (app.component.html).
 
 [source,ts]
@@ -121,6 +133,8 @@ The component `AppComponent` implements the interface `OnInit` and inside its me
 ----
 
 === Step 4: Structures, styles and updates
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 This step shows code interesting inside the sample app. The complete content can be found in https://github.com/devonfw-sample/devon4ts-samples/tree/master/apps/angular-basic-pwa[devon4ts-samples].
 
 *index.html*
@@ -166,6 +180,8 @@ This file is also used to reload the app if there are any changes.
 
 === Step 5: Make it Progressive.
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Install Angular PWA package with `ng add @angular/pwa --project=<name>`. As before substitute `name` with `**basic-ng-pwa**`.
 
 The above command completes the following actions:
@@ -182,6 +198,8 @@ The above command completes the following actions:
 
 
 ==== `manifest.json`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 manifest.json is a file that allows to control how the app is displayed in places where native apps are displayed.
 
@@ -207,6 +225,8 @@ Additional information can be found https://developers.google.com/web/fundamenta
 
 
 ==== `ngsw-config.json`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 ngsw-config.json specifies which files and data URLs have to be cached and updated by the Angular service worker.
 
@@ -241,6 +261,8 @@ ngsw-config.json specifies which files and data URLs have to be cached and updat
 Additional information can be found https://angular.io/guide/service-worker-config[here].
 
 === Step 6: Configure the app
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 *manifest.json*
 
@@ -283,6 +305,8 @@ At the root of the json: A data group to cache API calls.
 ----
 
 === Step 7: Check that your app is a PWA
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To check if an app is a PWA lets compare its normal behavior against itself but built for production. Run in the project's root folder the commands below:
 

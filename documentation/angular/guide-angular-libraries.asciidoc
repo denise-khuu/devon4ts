@@ -17,9 +17,13 @@ toc::[]
 
 = Links to UI Libraries
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 We have listed some links to UI libraries and common requested feature components we recommend. Here is the list
 
 === UI libraries:
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** https://material.angular.io/
 ** https://teradata.github.io/covalent/v3/#/
 ** https://www.primefaces.org/primeng/
@@ -27,6 +31,8 @@ We have listed some links to UI libraries and common requested feature component
 ** https://clarity.design/get-started/developing/angular/
 
 === Complex components or features:
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 **  Grids/Data Tables
 *** https://www.ag-grid.com/angular-data-grid/

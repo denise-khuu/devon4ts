@@ -17,9 +17,13 @@ toc::[]
 
 = devon4node Architecture
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 As we have mentioned in the introduction, devon4node is based on link:https://nestjs.com/[NestJS]. Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications.
 
 == HTTP layer
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 By using link:https://nestjs.com/[NestJS], devon4node is a platform-agnostic framework. NestJS focuses only on the logical layer, and delegates the transport layer to another framework, such as ExpressJS. You can see it in the following diagram:
 
@@ -30,6 +34,8 @@ As you can see, NestJS do not listen directly for incoming request. It has an ad
 At this point, you may think: why is NestJS (and devon4node) using ExpressJS by default instead of Fastify? Because, as you can see in the previous diagram, there is a component that is dependent on the HTTP framework: the middleware. As ExpressJS is the most widely used framework, there exists a lot of middleware for it, so, in order to reuse them in our NestJS applications, NestJS use ExpressJS by default. Anyway, you may think which HTTP framework best fits your requirements.
 
 == devon4node layers
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 As other devonfw technologies, devon4node separates the application into layers.
 
@@ -43,11 +49,15 @@ image::images/plantuml/layers.png[]
 
 == devon4node application structure
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Although there are many frameworks to create backend applications in NodeJS, none of them effectively solve the main problem of - Architecture. This is the main reason we have chosen NestJS for the devon4node applications. Besides, NestJS is highly inspired by link:https://angular.io/[Angular], therefore a developer who knows Angular can use his already acquired knowledge to write devon4node applications.
 
 NestJS adopts various Angular concepts, such as dependency injection, piping, interceptors and modularity, among others. By using modularity we can reuse some of our modules between applications. One example that devon4node provide is the link:guides-mailer[mailer module].
 
 === Modules
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Create a application module is simple, you only need to create an empty class with the decorator `Module`:
 
@@ -81,6 +91,8 @@ One example of global module is the `CoreModule`. In the `CoreModule` you must i
 For more information about modules, see link:https://docs.nestjs.com/modules[NestJS documentation page]
 
 === Folder structure
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 devon4node defines a folder structure that every devon4node application must follow. The folder structure is:
 
@@ -120,6 +132,8 @@ devon4node defines a folder structure that every devon4node application must fol
 link:guides-code-generation[devon4node schematics] ensures this folder structure so, please, do not create files by your own, use the link:guides-code-generation[devon4node schematics].
 
 === NestJS components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 NestJS provides several components that you can use in your application:
 

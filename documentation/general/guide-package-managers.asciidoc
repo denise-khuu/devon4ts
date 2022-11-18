@@ -17,6 +17,8 @@ toc::[]
 
 = Package Managers
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 There are two major package managers currently used for JavaScript / TypeScript projects which leverage NodeJS as a build platform.
 
 1. https://www.npmjs.com/[npm]
@@ -35,6 +37,8 @@ Before you start reading further, please take a look at the docs:
 The following guide will describe best practices for working with yarn / npm.
 
 == Semantic Versioning
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 When working with package managers it is very important to understand the concept of https://semver.org/[semantic versioning].
 
@@ -73,6 +77,8 @@ A would use the same version of C as B - 1.4.0.
 
 == Do not modify package.json and lock files by hand
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Dependencies are always added using a yarn or npm command.
 Altering the package.json, package-json.lock or yarn.lock file by hand is not recommended. 
 
@@ -91,6 +97,8 @@ npm install express
 ```
 
 == What does the lock file do
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The purpose of files `yarn.lock` and `package-json.lock` is to freeze versions for a short time.
 

@@ -17,6 +17,8 @@ toc::[]
 
 = Services Layer
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The services layer is more or less what we call 'business logic layer' on the server side.
 It is the layer where the business logic is placed.
 The main challenges are:
@@ -32,6 +34,8 @@ An example which puts the concepts together can be found at the end <<Interactio
 
 == Boundaries
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 There are two APIs for the components layer to interact with the services layer:
 
 * A store can be subscribed to for receiving state updates over time
@@ -43,6 +47,8 @@ To illustrate the fact the following figure shows an abstract overview.
 image::images/components-layer-service-layer-boundaries.svg["Smart and Dumb Components Interaction", width="450", link="images/components-layer-service-layer-boundaries.svg"]
 
 == Store
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 A store is a class which defines and handles application state with its transitions over time.
 Interaction with a store is always synchronous.
@@ -92,6 +98,8 @@ State transitions are handled automatically with _Smart Components_ registering 
 
 == Use Case Service
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 A use case service is a service which has methods to perform asynchronous state transitions.
 In reactive terminology this would be an _Action of Actions_ - a thunk (`redux`) or an effect (`@ngrx`).
 
@@ -103,6 +111,8 @@ So use case services orchestrate whole use cases.
 For an example see `<<usecaseservice-example,use case service example>>`.
 
 == Adapter
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 An adapter is used to communicate with the back-end.
 This could be a simple XHR request, a WebSocket connection, etc.
@@ -131,6 +141,8 @@ export class ProducsAdapter {
 
 == Interaction of Smart Components through the services layer
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The interaction of smart components is a classic problem which has to be solved in every UI technology.
 It is basically how one dialog tells the other something has changed.
 
@@ -146,6 +158,8 @@ With this action there need to be multiple state updates.
 
 === Pattern
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 To handle this interaction in a scalable way we apply the following pattern. 
 
 .Smart Component interaction
@@ -156,6 +170,8 @@ The state of interest is encapsulated inside a store. All _Smart Components_ int
 To put this pattern into perspective the `UseCaseService` is a programmatic alternative to `redux-thunk` or `@ngrx/effects`. The main motivation here is to use the full power of TypeScript `--strictNullChecks` and to let the learning curve not to become as steep as it would be when learning a new state management framework. This way actions are just `void` method calls.
 
 === Example
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 .Smart Components interaction example
 image::images/smart-smart-components-example.svg["Smart component interaction example", link="images/smart-smart-components-example.svg", width="450"]

@@ -17,6 +17,8 @@ toc::[]
 
 = GraphQL on Devon4Node
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 GraphQL is a query language that gets exactly the data that we ask for instead of static predefined responses.
 
 For example, on a regular API a get by id method would return something like:
@@ -61,14 +63,20 @@ yarn add @nestjs/graphql graphql-tools graphql apollo-server-express
 
 == Schema first
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 [NOTE]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 This tutorial uses the schema first method.
 
 We assume you have already a functioning TODO module / app.
 
 If not you can use https://github.com/devonfw/devon4node/tree/develop/samples/graphql[Devon4node GraphQL sample]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 First we need to import GraphQLModule to our `app.module.ts`.
 
@@ -98,6 +106,8 @@ The `typePaths` indicates the location of the schema definition files.
 The `definitions` indicates the file where the typescript definitions will automatically save, adding the `outputAs: 'class'` saves those definitions as classes.
 
 === Schema
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Graphql is a typed language with `object types`, `scalars`, and `enums`.
 
@@ -129,6 +139,8 @@ For more information about Types go to the official https://graphql.org/learn/sc
 
 
 === Resolver
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Resolver has the instructions to turn GraphQL orders into the data requested.
 
@@ -206,6 +218,8 @@ Learn more about Resolvers, mutations and their argument decorators on the https
 
 
 === Playground
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To test our backend we can use tools as Postman, but graphql already gives us a playground to test our Resolvers, we can access by default on `http://localhost:3000/graphql`. 
 

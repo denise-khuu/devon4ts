@@ -17,6 +17,8 @@ toc::[]
 
 = Simplifying CRUD with NgRx/Entity
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Most of the time when manipulating entries in the store, we like to create, add, update, or delete entries (CRUD). NgRx/Entity provides convenience functions if each item of a collection has an id property. Luckily all our entities already have this property.
 
 Let's add functionality to add a movie to the `watchlist`. First, create the required action:
@@ -30,8 +32,12 @@ export const addToWatchlist = createAction('[Recommendation List] Add to watchli
 
 [NOTE]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 You may wonder why the Date object is not created inside the reducer instead, since it should always be the current time. However, remember that reducers should be deterministic state machines -- State A + Action B should always result in the same State C. This makes reducers easily testable.
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Then, rewrite the `watchlistData` reducer to make use of NgRx/Entity:
 

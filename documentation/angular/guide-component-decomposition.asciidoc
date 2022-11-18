@@ -17,6 +17,8 @@ toc::[]
 
 = Component Decomposition
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 When implementing a new requirement there are a few design decisions, which need to be considered.
 A decomposition in _Smart_ and _Dumb Components_ should be done first.
 This includes the definition of state and responsibilities.
@@ -28,6 +30,8 @@ In the component tree this would translate to the definition of a new sub-tree.
 image::images/component-tree-highlighted-subtree.svg["Component Tree With Highlighted Sub Tree", width="450", link="images/component-tree-highlighted-subtree.svg"]
 
 == Defining Components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The following gives an example for component decomposition.
 Shown is a screenshot from a style guide to be implemented.
@@ -66,6 +70,8 @@ A widgets is a typical _Smart Component_ to be shared across feature modules.
 So the `SharedModule` is the place for it to be defined.  
 
 == Defining state
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Every UI has state.
 There are different kinds of state, for example
@@ -156,6 +162,8 @@ When complexity grows and state becomes larger this is usually a good idea.
 If the state should be shared between _Smart Components_ a store is to be used.
 
 == When are Dumb Components needed
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Sometimes it is not necessary to perform a full decomposition. The architecture does not enforce it generally. What you should keep in mind is, that there is always a point when it becomes recommendable.
 

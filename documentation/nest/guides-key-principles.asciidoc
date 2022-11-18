@@ -17,6 +17,8 @@ toc::[]
 
 = Key Principles
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 devon4node is built following some basic principles like:
 
 - link:https://en.wikipedia.org/wiki/SOLID[SOLID]
@@ -30,6 +32,8 @@ But key principles that best define devon4node (and are inherited from NestJS) a
 - Productivity
 
 == Simplicity
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In devon4node we tried to do everything as simple as possible. Following this principle we will be able to do easy to maintain applications.
 
@@ -67,6 +71,8 @@ With these examples you can get an idea of how simple it can be to code a devon4
 
 == Reusability
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 NestJS (and devon4node) applications are designed in a modular way. This allows you to isolate some functionality in a module, and then reuse it in every application that you need. This is the same behaviour that Angular has. You can see it in the NestJS modules like link:https://github.com/nestjs/typeorm[TypeORM], link:https://github.com/nestjs/swagger[Swagger] and others. Also, in devon4node we have the link:https://www.npmjs.com/package/@devon4node/mailer[Mailer module].
 
 In your applications, you only need to import those modules and then you will be able to use the functionality that they implement. Example
@@ -80,6 +86,8 @@ export class SomeModule {}
 ----
 
 == Productivity
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 devon4node is designed to create secure enterprise applications. But also, it allow you to do it in a fast way. To increase the productivity devon4node, devon4node provide schematics in order to generate some boilerplate code.
 

@@ -17,6 +17,8 @@ toc::[]
 
 = Serializer
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Serialization is the process of translating data structures or object state into a format that can be transmitted across network and reconstructed later.
 
 NestJS by default serialize all data to JSON (JSON.stringify). Sometimes this is not enough. In some situations you need to exclude some property (e.g password). Instead doing it manually, devon4node provides an interceptor (`ClassSerializerInterceptor`) that will do it for you. You only need to return a class instance as always and the interceptor will transform those class to the expected data.

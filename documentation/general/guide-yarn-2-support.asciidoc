@@ -17,6 +17,8 @@ toc::[]
 
 = Yarn 2
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Yarn v2 is a very different software from the v1. The following list contains the main new features:
 
 - https://yarnpkg.com/features/constraints[Constraints]
@@ -36,11 +38,15 @@ More info at https://yarnpkg.com/
 
 == Global Install
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Installing Yarn 2.x globally is discouraged as Yarn team is moving to a per-project install strategy. We advise you to keep Yarn 1.x (Classic) as your global binary by installing it via the instructions you can find https://classic.yarnpkg.com/en/docs/install[here].
 
 Once you've followed the instructions (running yarn --version from your home directory should yield something like 1.22.0), go to the next section to see how to enable Yarn 2 on your project.
 
 == Per-project install
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Follow these instructions to update your current devon4ng project to Yarn 2: 
 
@@ -72,6 +78,8 @@ nodeLinker: node-modules
 NOTE: For more advanced migration topics please refer to https://yarnpkg.com/advanced/migration 
 
 == Which files should be added to gitignore file?
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 If you're using Zero-Installs:
 
 [source, gitignore]

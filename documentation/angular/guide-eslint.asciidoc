@@ -17,9 +17,13 @@ toc::[]
 
 = Angular ESLint support
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 IMPORTANT: ESLint is supported in Angular 10.1.0 onward. 
 
 == What about TSLint?
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 TSLint is a fantastic tool. It is a linter that was written specifically to work based on the TypeScript `AST` format. This has advantages and disadvantages, as with most decisions we are faced with in software engineering!
 
@@ -32,6 +36,8 @@ The TypeScript Team themselves also announced their plans to move the TypeScript
 Angular ESLint support comes from the https://github.com/angular-eslint/angular-eslint[angular-eslint] tooling package. Angular documentation also links to this repository as you can check in the https://angular.io/cli/lint[`ng lint` section] of the Angular CLI documentation.
 
 == Quick start with Angular and ESLint
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to create a brand new Angular CLI workspace which uses ESLint instead of TSLint and Codelyzer, simply run the following commands:
 
@@ -48,7 +54,11 @@ $ ng new --collection=@angular-eslint/schematics
 
 == Migrating an Angular CLI project from Codelyzer and TSLint
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 === 1 - Add relevant dependencies
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The first step is to run the schematic to add `@angular-eslint` to your project:
 
@@ -60,6 +70,8 @@ $ ng add @angular-eslint/schematics
 This will handle installing the latest version of all the relevant packages for you and adding them to the `devDependencies` of your package.json.
 
 === 2 - Run the `convert-tslint-to-eslint` schematic on a project
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The next thing to do is consider which "project" you want to migrate to use ESLint. If you have a single application in your workspace you will likely have just a single entry in the projects configuration object within your `angular.json` file. If you have a `projects/`` directory in your workspace, you will have multiple entries in your `projects` configuration and you will need to chose which one you want to migrate using the `convert-tslint-to-eslint` schematic.
 
@@ -73,6 +85,8 @@ $ ng g @angular-eslint/schematics:convert-tslint-to-eslint {{YOUR_PROJECT_NAME_G
 From now on, `ng lint` will use ESLint!
 
 === 3 - Remove root TSLint configuration and use only ESLint
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Once you are happy with your ESLint setup, you simply need to remove the root-level `tslint.json` and potentially uninstall TSLint and any TSLint-related plugins/dependencies if your Angular CLI workspace is now no longer using TSLint at all.
 

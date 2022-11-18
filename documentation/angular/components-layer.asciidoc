@@ -17,6 +17,8 @@ toc::[]
 
 = Components Layer
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The components layer encapsulates all components presenting the current application view state, which means data to be shown to the user.
 The term component refers to a component described by the standard https://www.w3.org/standards/techs/components[Web Components].
 So this layer has all Angular components, directives and pipes defined for an application.
@@ -29,6 +31,8 @@ The main challenges are:
 * apply a maintainable data and event flow throughout the component tree
 
 == Smart and Dumb Components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The architecture applies the concept of _Smart_ and _Dumb Components_ (syn. _Containers_ and _Presenters_).
 The concept means that components are divided into _Smart_ and _Dumb Components_.
@@ -76,6 +80,8 @@ To clarify this distinction further the following table shows the main differenc
 |===
 
 == Interaction of Smart and Dumb Components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 With the usage of the _Smart_ and _Dumb Components_ pattern one of the most important part is component interaction.
 Angular comes with built in support for component interaction with `@Input()` and `@Output()` Decorators.

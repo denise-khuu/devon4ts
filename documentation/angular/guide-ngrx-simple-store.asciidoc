@@ -17,10 +17,16 @@ toc::[]
 
 = State, Selection and Reducers
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 == Creating a Simple Store
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 In the following pages we use the example of an online streaming service. We will model a particular feature, a watchlist that can be populated by the user with movies she or he wants to see in the future.
 
 === Initializing NgRx
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 If you're starting fresh, you first have to initialize NgRx and create a root state. The fastest way to do this is using the schematic:
 
@@ -38,8 +44,12 @@ This generates a file `watchlist/reducers/index.ts` with the reducer function, a
  
 [WARNING]
 =====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 If you're getting an error _Schematic "store" not found in collection "@schematics/angular"_, this means you forgot to register the NgRx schematics as default.
 =====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Next, add the `WatchlistModule` to the `AppModule` imports so the feature store is registered when the application starts. We also added the *store devtools* which we will use later, resulting in the following file:
 
@@ -80,6 +90,8 @@ export class AppModule { }
 ----
 
 === Create an entity model and initial state
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 We need a simple model for our list of movies. Create a file `watchlist/models/movies.ts` and insert the following code:
 
 [source, typescript]
@@ -104,8 +116,12 @@ export interface WatchlistItem {
 
 [NOTE]
 =====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 We discourage putting several types into the same file and do this only for the sake of keeping this tutorial brief.
 =====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Later we will learn how to retrieve data from the back-end using effects. For now we will create an initial state for the user with a default movie.
 
@@ -147,6 +163,8 @@ export const initialState: State = {
 ----
 
 === Select the current watchlist
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 State slices can be retrieved from the store using selectors.
 
@@ -243,9 +261,13 @@ export class WatchlistComponent {
 
 === Dispatching an action to update watched minutes
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 We track the user's current progress at watching a movie as the `playbackMinutes` property. After closing a video, the watched minutes have to be updated. In NgRx, state is being updated by dispatching actions. An action is an option with a (globally unique) type discriminator and an optional payload.
 
 ==== Creating the action
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Create a file `playback/actions/index.ts`. In this example, we do not further separate the actions per sub state. Actions can be defined by using action creators:
 
@@ -267,10 +289,16 @@ First we specify the type, followed by a call to the payload definition function
 
 [TIP]
 =====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Action types should follow the naming convention `[Source] Event`, e.g. `[Recommended List] Hide Recommendation` or `[Auth API] Login Success`. Think of actions rather as events than commands. You should never use the same action at two different places (you can still handle multiple actions the same way). This facilitate tracing the source of an action. For details see https://www.youtube.com/watch?v=JmnsEvoy-gY[Good Action Hygiene with NgRx] by Mike Ryan (video).
 =====
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 ==== Dispatch
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 We skip the implementation of an actual video playback page and simulate watching a movie in 10 minute segments by adding a link in the template:
 
@@ -291,6 +319,8 @@ import * as playbackActions from 'src/app/playback/actions';
 ----
 
 ==== State reduction
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Next, we handle the action inside the `watchlistData` reducer. Note that actions can be handled by multiple reducers and effects at the same time to update different states, for example if we'd like to show a rating modal after playback has finished.
 
@@ -328,10 +358,16 @@ Note how we changed the reducer's function signature to reference the actions un
 
 [CAUTION]
 =====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Selectors rely on object identity to decide whether the value has to be recalculated. Do not clone objects that are not on the path to the change you want to make. This is why `updatePlaybackMinutesMapper` returns the same item if the movie id does not match.
 =====
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 ==== Alternative state mapping with Immer
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 It can be hard to think in immutable changes, especially if your team has a strong background in imperative programming. In this case, you may find the https://github.com/immerjs/immer[Immer] library convenient, which allows to produce immutable objects by manipulating a proxied draft. The same reducer can then be written as:
 
 *watchlist-data.reducer.ts* with Immer
@@ -351,6 +387,8 @@ case playbackActions.playbackFinished.type:
 Immer works out of the box with plain objects and arrays.
 
 ==== Redux devtools
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 If the `StoreDevToolsModule` is instrumented as described above, you can use the browser extension https://github.com/reduxjs/redux-devtools[Redux devtools] to see all dispatched actions and the resulting state diff, as well as the current state, and even travel back in time by undoing actions.
 

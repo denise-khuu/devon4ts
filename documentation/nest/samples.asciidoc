@@ -17,6 +17,8 @@ toc::[]
 
 = devon4node Samples
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In the folder /samples, you can find some devon4node examples that could be useful for you in order to understand better the framework.
 
 The samples are:
@@ -27,6 +29,8 @@ The samples are:
 Also, we have another realistic example in the link:https://github.com/devonfw/my-thai-star/tree/develop/node[My Thai Star repository]. This example is the implementation of My Thai Star backend, which is compatible with the frontend made with Angular. To do that, this node implementation exposes the same API as Java backend. Take care with this example, as we need to follow the Java API, some components do not follow the devon4node patterns and code conventions.
 
 == Todo example
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This example is the backend part of an TO-DO application. It exposes and API where you can create, read, update and delete a TO-DO list.
 
@@ -54,6 +58,8 @@ It will return a JWT token for the user `user`. The rol of this user is USER, so
 
 == Employee example
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This is an example of employee management application. With the application you can create, read, update and delete employees.
 
 In order to start the application, run the following commands in the todo folder:
@@ -76,6 +82,8 @@ This is a simple example without authentication. With this example you can learn
 You can also execute the migration manually by typing the command `devon4node db migration:run`, or revert executing `devon4node db migration:revert`. Take into account that the database that this application is using is an in-memory sqlite, so every time that you stop the application all data is lost.
 
 == Components example
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This example allow you to understand better the execution order of the components of a devon4node application (guards, pipes, interceptors, filters, middleware).
 

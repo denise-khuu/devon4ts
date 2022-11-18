@@ -17,11 +17,15 @@ toc::[]
 
 = Routing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 A basic introduction to the Angular Router can be found in https://angular.io/guide/router[Angular Docs].
 
 This guide will show common tasks and best practices.
 
 == Defining Routes
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 For each feature module and the app module all routes should be defined in a separate module with the suffix `RoutingModule`.
 This way the routing modules are the only place where routes are defined.
@@ -34,6 +38,8 @@ image::images/module-declaration.svg["Routing module declaration", width="450", 
 It is important to define routes inside app routing module with `.forRoot()` and in feature routing modules with `.forChild()`.
 
 === Example 1 - No Lazy Loading
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In this example two modules need to be configured with routes - `AppModule` and `FlightModule`.
 
@@ -85,6 +91,8 @@ TIP: The import order inside `AppModule` is important.
 
 === Example 2 - Lazy Loading
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Lazy Loading is a good practice when the application has multiple feature areas and a user might not visit every dialog.
 Or at least he might not need every dialog up front.
 
@@ -127,6 +135,8 @@ export class FlightSearchRoutingModule { }
 
 == Triggering Route Changes
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 With Angular you have two ways of triggering route changes.
 
 1. Declarative with bindings in component HTML templates
@@ -148,6 +158,8 @@ image::images/triggering-navigation.svg["Triggering navigation", link="images/tr
 
 == Guards
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Guards are Angular services implemented on routes which determines whether a user can navigate to/from the route. There are examples below which will explain things better. We have the following types of Guards:
 
 * *`CanActivate`*: It is used to determine whether a user can visit a route. The most common scenario for this guard is to check if the user is authenticated. For example, if we want only logged in users to be able to go to a particular route, we will implement the `CanActivate` guard on this route.
@@ -160,7 +172,11 @@ Let's have a look at some examples.
 
 === Example 1 - `CanActivate` and `CanActivateChild` guards
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 ==== `CanActivate` guard
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 As mentioned earlier, a guard is an Angular service and services are simply `TypeScript` classes. So we begin by creating a class. This class has to implement the `CanActivate` interface (imported from `angular/router`), and therefore, must have a `canActivate` function. The logic of this function determines whether the requested route can be navigated to or not. It returns either a Boolean value or an `Observable` or a `Promise` which resolves to a Boolean value. If it is true, the route is loaded, else not.
 
@@ -221,6 +237,8 @@ As you can see, the `canActivate` property accepts an array of guards. So we can
 
 ==== `CanActivateChild` guard
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 To use the guard on nested (children) routes, we add it to the `canActivateChild` property like so:
 
 .Implementing the guard on child routes
@@ -238,6 +256,8 @@ const routes: Routes = [
 ----
 
 === Example 2 - `CanLoad` guard
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Similar to `CanActivate`, to use this guard we implement the `CanLoad` interface and overwrite it's `canLoad` function. Again, this function returns either a Boolean value or an `Observable` or a `Promise` which resolves to a Boolean value. The fundamental difference between `CanActivate` and `CanLoad` is that `CanLoad` is used to determine whether an entire module can be lazily loaded or not. If the guard returns `false` for a module protected by `CanLoad`, the entire module is not loaded.
 
@@ -280,6 +300,8 @@ const routes: Routes = [
 ----
 
 == Enable tracing
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 You can enable router tracing by adding an additional parameter to the `forRoot()` method which allows specifying certain routing options as required.
 

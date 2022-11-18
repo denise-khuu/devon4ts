@@ -17,6 +17,8 @@ toc::[]
 
 = Coding Conventions
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 devon4node defines some coding conventions in order to improve the readability, reduce the merge conflicts and be able to develop applications in an industrialized way.
 
 In order to ensure that you are following the devon4node coding conventions, you can use the following tools:
@@ -29,13 +31,19 @@ When you combine all tools, you can be sure that you follow the devon4node codin
 
 == Detailed devon4node Coding Conventions
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Here we will detail some of most important devon4node coding conventions. To be sure that you follows all devon4node coding conventions use the tools described before.
 
 === Indentation
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 All devon4node code files must be indented using spaces. The indentation with must be 2 spaces.
 
 === White space
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to improve the readability of your code, you must introduce whitespaces. Example:
 
@@ -53,7 +61,11 @@ if (condition) {
 
 === Naming conventions
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 ==== File naming
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The file name must follow the pattern: (name in kebab case).(kind of component).(extension)
 The test file name must follow the pattern: (name in kebab case).(kind of component).spec.(extension)
@@ -67,6 +79,8 @@ auth-jwt.service.spec.ts
 
 ==== Interface naming
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The interface names must be in pascal case, and must start with I. There is some controversy in starting the interface names with an I, but we decided to do it because is most of cases you will have an interface and a class with the same name, so, to differentiate them, we decided to start the interfaces with I. Other devonfw stacks solves it by adding the suffix `Impl` in the class implementations.
 
 Example:
@@ -76,6 +90,8 @@ interface ICoffee {}
 ----
 
 ==== Class naming
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The class names must be in pascal case.
 
@@ -87,6 +103,8 @@ class Coffee {}
 
 ==== Variable naming
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 All variable names must be in camel case.
 ----
 const coffeeList: Coffe[];
@@ -94,11 +112,17 @@ const coffeeList: Coffe[];
 
 === Declarations
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 For all variable declarations we must use `const` or `let`. `var` is forbidden. We prefer to use  `const` when possible.
 
 === Programming practices
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 ==== Trailing comma
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 All statements must end with a trailing comma. Example:
 
@@ -116,9 +140,13 @@ All statements must end with a trailing comma. Example:
 
 ==== Arrow functions
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 All anonymous functions must be defined with the arrow function notation. In most of cases it's not a problem, but sometimes, when you do not want to bind `this` when you define the function, you can use the other function definition. In this special cases you must disable the linter for those sentence.
 
 ==== Comments
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Comments must start with a whitespace. Example:
 
@@ -130,9 +158,13 @@ Comments must start with a whitespace. Example:
 
 ==== Quotemarks
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 For string definitions, we must use single quotes.
 
 ==== if statements
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In all if statements you always must use brackets. Example:
 
@@ -149,6 +181,8 @@ if (condition) {
 ----
 
 == Pre-commit hooks
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to ensure that your new code follows the coding conventions, devon4node uses by default husky. Husky is a tool that allows you to configure git hooks easily in your project. When you make a `git commit` in your devon4node project, it will execute two actions:
 

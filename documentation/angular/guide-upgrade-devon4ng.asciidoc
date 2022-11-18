@@ -17,6 +17,8 @@ toc::[]
 
 = Upgrade devon4ng Angular and Ionic/Angular applications
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Angular CLI provides a powerful tool to upgrade Angular based applications to the current stable release of the core framework. 
 
 This tool is `ng update`. It will not only upgrade dependencies and their related ones but also will perform some fixes in your code if available thanks to the provided _schematics_. It will check even if the update is not possible as there is another library or libraries that are not compatible with the versions of the upgraded dependencies. In this case it will keep your application untouched. 
@@ -25,6 +27,8 @@ NOTE: The repository must be in a clean state before executing a `ng update`. So
 
 == Basic usage
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to perform a basic upgrade we will execute:
 
 ```bash
@@ -32,6 +36,8 @@ $ ng update @angular/cli @angular/core
 ```
 
 === Upgrade to new Angular version
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The process will be the same, but first we need to make sure that our devon4ng application is in the lates version of Angular 8, so the `ng update` command can perform the upgrade not only in the dependencies but also making code changes to reflect the new features and fixes.
 
@@ -79,6 +85,8 @@ $ ng update @angular/cli @angular/core @angular/material
 
 === Ionic/Angular applications
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Just following the same procedure we can upgrade Angular applications, but we must take care of important specific Ionic dependencies:
 
 ```bash
@@ -86,6 +94,8 @@ $ ng update @angular/cli @angular/core @ionic/angular @ionic/angular-toolkit [@i
 ```
 
 === Other dependencies
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Every application will make use of different dependencies. Angular CLI `ng upgrade` will also take care of these ones. For example, if you need to upgrade `@capacitor` you will perform:
 
@@ -100,5 +110,7 @@ $ ng update @ngx-translate/core @ngx-translate/http-loader
 ```
 
 === Angular Update Guide online tool
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 It is recommended to use the Angular Update Guide tool at https://update.angular.io/ that will provide the necessary steps to upgrade any Angular application depending on multiple criteria. 

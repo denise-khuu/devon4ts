@@ -16,6 +16,8 @@ toc::[]
 :listing-caption: Listing
 
 == Add Electron to an Angular application using Angular CLI
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 This cookbook recipe explains how to integrate Electron in an Angular 10+ application. https://electronjs.org/[Electron] is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS. As an example, very well known applications as Visual Studio Code, Atom, Slack or Skype (and many more) are using Electron too. 
 
 NOTE: At the moment of this writing Angular 11.2.0, Electron 11.2.3 and Electron-builder 22.9.1 were the versions available. 
@@ -23,6 +25,8 @@ NOTE: At the moment of this writing Angular 11.2.0, Electron 11.2.3 and Electron
 Here are the steps to achieve this goal. Follow them in order. 
 
 === Add Electron and other relevant dependencies
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 There are two different approaches to add the dependencies in the `package.json` file: 
 
 * Writing the dependencies directly in that file.
@@ -58,9 +62,13 @@ $ yarn add -D electron electron-builder
 
 === Create the necessary typescript configurations
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to initiate electron in an angular app we need to modify the `tsconfig.json` file and create a `tsconfig.serve.json` and a `tsconfig.base.json` in the root folder.
 
 ==== `tsconfig.json`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This file needs to be modified to create references to `./src/tsconfig.app.json` and `./src/tsconfig.spec.json` to support different configurations.
 
@@ -80,6 +88,8 @@ This file needs to be modified to create references to `./src/tsconfig.app.json`
 ----
 
 ==== `tsconfig.app.json`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 [source,json]
 ----
@@ -106,6 +116,8 @@ This file needs to be modified to create references to `./src/tsconfig.app.json`
 ----
 
 ==== `tsconfig.spec.json`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 [source,json]
 ----
@@ -135,6 +147,8 @@ This file needs to be modified to create references to `./src/tsconfig.app.json`
 ----
 
 ==== `tsconfig.base.json`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This is shared between `tsconfig.app.json` and `tsconfig.spec.json` and it will be extended on each config file.
 
@@ -175,6 +189,8 @@ This is shared between `tsconfig.app.json` and `tsconfig.spec.json` and it will 
 
 ==== `tsconfig.serve.json`
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In the root, `tsconfig.serve.json` needs to be created. This typescript config file is going to be used when we serve electron:
 
 [source, json]
@@ -207,6 +223,8 @@ In the root, `tsconfig.serve.json` needs to be created. This typescript config f
 ----
 
 === Add Electron build configuration
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to configure electron builds properly we need to create a new json on our application, let's call it electron-builder.json. For more information and fine tuning please refer to the https://www.electron.build/configuration/configuration[Electron Builder official documentation].
 
@@ -248,6 +266,8 @@ There are two important things in this files:
 
 === Modify angular.json
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 `angular.json` has to to be modified so the project is build inside _/dist_ without an intermediate folder.
 
 [source,json]
@@ -262,6 +282,8 @@ There are two important things in this files:
 ----
 
 === Create the electron window in `electron-main.ts`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to use electron, a file needs to be created at the root of the application (`main.ts`). This file will create a window with different settings checking if we are using `--serve` as an argument:
 
@@ -343,6 +365,8 @@ try {
 
 === Add the electron window and improve the `package.json` scripts
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Inside `package.json` the electron window that will be transformed to `electron-main.js` when building needs to be added.
 
 [source,json]
@@ -384,11 +408,15 @@ The `electron:` scripts do the following:
 
 == Add Electron to an Angular application using Nx CLI
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Creating an Electron app is very easy and straight-forward if you are using Nx CLI. As a pre-requisite, you should already have an application in your Nx workspace which you want to run as a front-end in your Electron app. (You can follow https://github.com/devonfw/devon4ng/wiki/guide-creating-angular-app-with-nx-cli[this guide] if you want to get started with Nx).
 
 Follow the steps below to develop an Electron app in your Nx workspace:
 
 === Install `nx-electron`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Install `nx-electron` using the command:
 ```
@@ -398,6 +426,8 @@ This will add the packages `electron` and `nx-electron` as dev dependencies to y
 
 === Generate your Electron app
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Once you have installed `nx-electron`, you can generate your electron app using the command:
 ```
   nx g nx-electron:app <electron-app-name> --frontendProject=<frontend-app-name>
@@ -406,6 +436,8 @@ Once you have installed `nx-electron`, you can generate your electron app using 
 And that is it! You have generated your Electron app already. All the configuration files (`tsconfig.*`) are generated for you under <electron-app-name> in your Nx workspace.
 
 === Serving your app
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 You can use this command to serve your Electron app:
 
@@ -417,6 +449,8 @@ If you see a blank application, it is because the Electron app was served before
 
 === Building your app
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The command for building your Electron app in Nx is similar to the `serve` command above, you only change the target from `serve` to `build`:
 
 ```
@@ -424,6 +458,8 @@ The command for building your Electron app in Nx is similar to the `serve` comma
 ```
 
 === Packaging your app
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Make sure you have build your app before you try to package it using the following command:
 

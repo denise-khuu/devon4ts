@@ -1,11 +1,17 @@
 = Angular
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 
 == Introduction
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 include::home[leveloffset=2]
 
 == Architecture
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 include::architecture[leveloffset=2]
 
@@ -13,11 +19,15 @@ include::meta-architecture[leveloffset=2]
 
 == Layers
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 include::components-layer[leveloffset=2]
 
 include::services-layer[leveloffset=2]
 
 == Guides
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 include::guide-package-managers[leveloffset=2]
 
@@ -26,6 +36,8 @@ include::guide-npm-yarn-workflow[leveloffset=2]
 include::guide-yarn-2-support[leveloffset=2]
 
 == Angular
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 include::guide-accessibility[leveloffset=2]
 
@@ -63,6 +75,8 @@ include::guide-working-with-angular-cli[leveloffset=2]
 
 == Ionic
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 include::guide-ionic-getting-started[leveloffset=2]
 
 include::guide-ionic-from-code-to-android[leveloffset=2]
@@ -71,9 +85,13 @@ include::guide-ionic-pwa[leveloffset=2]
 
 == Layouts
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 include::guide-layout-with-angular-material[leveloffset=2]
 
 == NgRx
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 include::guide-ngrx-getting-started[leveloffset=2]
 
@@ -84,6 +102,8 @@ include::guide-ngrx-effects[leveloffset=2]
 include::guide-ngrx-entity[leveloffset=2]
 
 == Cookbook
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 include::cookbook-abstract-class-store[leveloffset=2]
 

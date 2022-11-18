@@ -17,6 +17,8 @@ toc::[]
 
 = TypeORM
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 TypeORM is the default ORM provided by devon4node. It supports MySQL, MariaDB, Postgres, CockroachDB, SQLite, Microsoft SQL Server, Oracle, sql.js relational database and also supports MongoDB NoSQL database.
 
 Add TypeORM support to a devon4node application is very easy: you only need to execute the command `nest g -c @devon4node/schematics typeorm` and it will add all required dependencies to the project and also imports the `@nestjs/typeorm` module.
@@ -24,6 +26,8 @@ Add TypeORM support to a devon4node application is very easy: you only need to e
 For more information about TypeORM and the integration with NestJS you can visit link:https://typeorm.io[TypeORM webpage], link:https://github.com/typeorm/typeorm[TypeORM GitHub repository] and link:https://docs.nestjs.com/recipes/sql-typeorm[NestJS TypeORM documentation page]
 
 == Configuration
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 When you have the configuration module, the TypeORM generator will add one property in order to be able to configure the database depending on the environment. Example:
 
@@ -59,6 +63,8 @@ So, you only need to maintain the ormconfig.json file for the local environment.
 
 == Entity
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Entity is a class that maps to a database table. The devon4node schematics has a generator to create new entities. You only need to execute the command `nest g -c @devon4node/schematics entity <entity-name>` and it generate the entity.
 
 In the entity, you must define all columns, relations, primary keys of your database table. By default, devon4node provides a class named `BaseEntity`. All entities created with the devon4node schematics will extends the `BaseEntity`. This entity provides you some common columns:
@@ -71,6 +77,8 @@ In the entity, you must define all columns, relations, primary keys of your data
 For more information about Entities, please visit the link:https://typeorm.io/#/entities[TypeORM entities page]
 
 == Repository
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 With repositories, you can manage (insert, update, delete, load, etc.) a concrete entity. Using this pattern, we have separated the data (Entities) from the methods to manage it (Repositories).
 

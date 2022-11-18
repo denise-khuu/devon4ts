@@ -17,17 +17,25 @@ toc::[]
 
 = Error Handler in angular
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Angular allows us to set up a custom error handler that can be used to control the different errors and them in a correct way. Using a global error handler will avoid mistakes and provide a use friendly interface allowing us to indicate the user what problem is happening.
 
 == What is `ErrorHandler`
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 `ErrorHandler` is the class that `Angular` uses by default to control the errors. This means that, even if the application doesn't have a `ErrorHandler` it is going to use the one setup by default in `Angular`. This can be tested by trying to find a page not existing in any app, instantly `Angular` will print the error in the console.
 
 == Creating your custom `ErrorHandler` step by step
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to create a custom `ErrorHandler` three steps are going to be needed:
 
 === Creating the custom `ErrorHandler` class
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In this first step the custom `ErrorHandler` class is going to be created inside the folder `/app/core/errors/errors-handler.ts`:
 
@@ -68,6 +76,8 @@ This class can be used to control the different type of errors. If wanted, the `
 
 === Creating a `ErrorInterceptor`
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Inside the same folder created in the last step we are going to create the `ErrorInterceptor`(`errors-handler-interceptor.ts`). This `ErrorInterceptor` is going to retry any failed calls to the server to make sure it is not being found before showing the error:
 
 [source, TypeScript]
@@ -105,6 +115,8 @@ This custom made interceptor is implementing the `HttpInterceptor` and inside th
   3. With `concatMap` if the index that `take()` gives is not 5 it returns the error, else, it throws the error.
 
 === Creating a Error Module
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Finally, creating a module(`errors-handler.module.ts`) is necessary to include the `interceptor` and the custom error handler. In this case, the module is going to be created in the same folder as the last two: 
 
@@ -148,6 +160,8 @@ This module simply is providing the services that are implemented by our custom 
 
 == Handling Errors
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 As a final step, handling these errors is necessary. There are different ways that can be used to control the errors, here are a few:
 
     - Creating a custom page and using with `Router` to redirect to a page showing an error.
@@ -155,6 +169,8 @@ As a final step, handling these errors is necessary. There are different ways th
     - Showing a custom made `SnackBar` with the error message.
 
 ==== Using `SnackBarService` and `NgZone` 
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 If the https://material.angular.io/components/snack-bar/overview[SnackBar] is used directly, some errors can occur, this is due to `SnackBar` being out of the `Angular` zone. In order to use this service properly, https://angular.io/api/core/NgZone[NgZone] is necessary. The method `run()` from `NgZone` will allow the service to be inside the `Angular Zone`. An example on how to use it: 
 

@@ -17,11 +17,15 @@ toc::[]
 
 = Angular Lazy loading
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 When the development of an application starts, it just contains a small set of features so the app usually loads fast. However, as new features are added, the overall application size grows up  and its loading speed decreases. It is in this context where Lazy loading finds its place.
 Lazy loading is a design pattern that defers initialization of objects until it is needed, so, for example, users that just access to a website's home page do not need to have other areas loaded.
 Angular handles lazy loading through the routing module which redirects to requested pages. Those pages can be loaded at start or on demand. 
 
 == An example with Angular
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To explain how lazy loading is implemented using angular, a basic sample app is going to be developed. This app will consist in a window named "level 1" that contains two buttons that redirects to other windows in a "second level". It is a simple example, but useful to understand the relation between angular modules and lazy loading.
 
@@ -34,6 +38,8 @@ Because the objective of this guide is related mainly with logic, the html struc
 
 
 === Implementation
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 First write in a console `ng new level-app --routing`, to generate a new project called level-app including an app-routing.module.ts file (*--routing* flag). If you are using Nx, the command would be `nx generate @nrwl/angular:app level-app --routing` in your Nx workspace.
 
@@ -61,8 +67,12 @@ The next steps consists on creating features modules.
 
 [NOTE]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
   If you are using Nx, you have to specify the project name (level-app) along with the --project flag. For example, command for generating the first module will be `ng generate module first --project=level-app --routing`
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To move between components we have to configure the routes used:
 
@@ -318,5 +328,7 @@ Clicking on *[Go to left module]* triggers the load of `SecondLeftModule`.
 image::images/angular/angular-lazy/second-lvl-left-lazy.png["Second level lazy network", width=800 link="images/angular/angular-lazy/second-lvl-left-lazy.png"]
 
 == Conclusion
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Lazy loading is a pattern useful when new features are added, these features are usually identified as modules which can be loaded only if needed as shown in this document, reducing the time spent loading an application.

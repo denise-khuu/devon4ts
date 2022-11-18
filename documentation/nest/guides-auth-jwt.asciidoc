@@ -17,6 +17,8 @@ toc::[]
 
 = Auth JWT module
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 devon4node provides a way to generate a default authentication module using JWT (JSON Web Token). It uses the `@nestjs/passport` library describe link:https://docs.nestjs.com/techniques/authentication[here].
 
 To generate the devon4node auth-jwt module you only need to execute the command: `nest generate -c @devon4node/schematics auth-jwt`. We generate this module inside the applications instead of distributing a npm package because this module is prone to be modified depending on the requirements. It also generate a basic user module.
@@ -30,6 +32,8 @@ In this page we will explain the default implementation provided by devon4node. 
 
 == Auth JWT endpoints
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to execute authentication operations, the auth-jwt module exposes the following endpoints:
 
 - `POST /auth/login`: receive an username and a password and return the token in the header if the combination of username and password is correct.
@@ -37,6 +41,8 @@ In order to execute authentication operations, the auth-jwt module exposes the f
 - `GET /auth/currentuser`: return the user data if he is authenticated.
 
 == Protect endpoints with auth-jwt
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to protect your endpoints with auth-jwt module you only need to add the `AuthGuard()` in the `UseGuards` decorator. Example:
 
@@ -52,6 +58,8 @@ currentUser(@Request() req: UserRequest) {
 Now, all request to currentuser are protected by the `AuthGuard`.
 
 == Role based Access Control
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The auth-jwt module provides also a way to control the access to some endpoints by using roles. For example, if you want to grant access to a endpoint only to admins, you only need to add the `Roles` decorator to those endpoints with the roles allowed. Example:
 

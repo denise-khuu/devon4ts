@@ -17,16 +17,24 @@ toc::[]
 
 = devon4ts
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This guide describes an application architecture for web client development in https://angular.io/[Angular] with nx and NestJs backend.
 
 == Motivation
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Web Application development is a very difficult task since there are a lot of different frameworks, patterns and practices nowadays. For that reason, in devonfw we decided to make use of Nx since it is a full front-end framework that includes almost all the different patterns and features that any SPA may need and provides a well defined architecture to development, build and deploy. 
 
 
 == Contents
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 === General
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 This section introduces concepts to help developers with the tooling and package managers.
 
@@ -37,9 +45,13 @@ This section introduces concepts to help developers with the tooling and package
 
 === Angular
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This is the main section of the documentation, where the developer will find guidelines for accessibility, how to use the Angular toolchain, how to refactor components, create libraries and, in general, maintain Angular applications. But last and not least, developers will also find solutions to common problems many of the Angular projects may have. 
 
 ==== Architecture
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 * link:architecture[Architecture Overview]
   
@@ -54,6 +66,8 @@ The goal of this topic is to support the non-functional requirements for the cli
 
 ==== NgRx
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 State Management is a big topic in big front-end application. This section explains the fundamentals of the industry standard library NgRx, showing its main components.
 
 * link:guide-ngrx-getting-started[Introduction]
@@ -62,6 +76,8 @@ State Management is a big topic in big front-end application. This section expla
 * link:guide-ngrx-entity[Simplifying CRUD with NgRx/Entity]
 
 ==== Guides
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The Guides section aims to provide solutions to cross-topic challenges that at this moment do not fit in the previous sections. As the *Angular* section, some of the topics are demonstrated with a sample located in the `samples` folder.
 
@@ -94,6 +110,8 @@ NOTE: All the different topics are demonstrated in the `samples` folder with a s
 
 === Ionic
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 As part of the devon4ng stack, we include a small section to explain how to develop hybrid mobile Ionic/Angular applications and create `PWAs` with this UI library. As the previous section, the contents are demonstrated in the `samples` folder. 
 
 * link:guide-ionic-getting-started[Ionic Getting started]
@@ -101,11 +119,15 @@ As part of the devon4ng stack, we include a small section to explain how to deve
 * link:guide-ionic-pwa[Ionic Progressive Web Apps]
 
 === Nx
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 We have included a small section to explain how we can get started with the Nx CLI.
 
 * link:guide-nx-workflow[Nx Monorepo Workflow]
 * link:guide-creating-angular-app-with-nx-cli[Starting with Nx CLI in Angular]
 
 === NestJS backend:
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 In this section we have explained backend with NestJS framework. The goal is to provide the knowledge of architecture of this framework and the demonstration of step by step application samples.
 

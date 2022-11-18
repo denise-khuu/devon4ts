@@ -17,11 +17,15 @@ toc::[]
 
 = Dependency Injection
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The link:https://en.wikipedia.org/wiki/Dependency_injection[dependency injection] is a well-known common design pattern applied by frameworks in all languages, like link:https://spring.io/[Spring] in Java, link:https://angular.io/[Angular] and others. The intention of this page is not to explain how dependency injection works, but instead how it is addressed by NestJS.
 
 NestJS resolve the dependency injection in their modules. When you define a provider in a module, it can be injected in all components of the module. By default, those providers are only available in the module where it is defined. The only way to export a module provider to other modules which import it is adding those provider to the export array. You can also reexport modules.
 
 == Inject dependencies in NestJS
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to inject a dependency in a NestJS component, you need to declare it in the component constructor. Example:
 
@@ -55,6 +59,8 @@ export class CoffeeController {
 
 == Dependency Graph
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 image::images/plantuml/dependency-injection1.png[]
 
 In the previous image, the Module A can inject dependencies exported by Module B, Module E and Module F. If module B reexport Module C and Module D, they are also accessible by Module A.
@@ -66,6 +72,8 @@ When you define a module as global, the dependency injection system is the same.
 image::images/plantuml/dependency-injection2.png[]
 
 == Custom providers
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 When you want to change the provider name, you can use a NestJS feature called link:https://docs.nestjs.com/fundamentals/custom-providers[custom providers]. For example, if you want to define a provider called `MockUserService` with the provider token `UserService` you can define it like:
 

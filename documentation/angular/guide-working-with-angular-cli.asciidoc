@@ -17,6 +17,8 @@ toc::[]
 
 = Working with Angular CLI
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Angular CLI provides a facade for building, testing, linting, debugging and generating code.
 Under the hood Angular CLI uses specific tools to achieve these tasks.
 The user does no need to maintain them and can rely on Angular to keep them up to date and maybe switch to other tools which come up in the future.
@@ -28,6 +30,8 @@ In this guide we will go through the most important tasks.
 To go into more details, please visit the Angular CLI wiki.
 
 == Installing Angular CLI
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Angular CLI should be added as global and local dependency.
 The following commands add Angular CLI as global Dependency.
@@ -52,6 +56,8 @@ image::images/install-cli-success.png["Printing Angular CLI Version", width="450
 
 == Running a live development server
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The Angular CLI can be used to start a live development server.
 First your application will be compiled and then the server will be started.
 If you change the code of a file, the server will reload the displayed page.
@@ -62,6 +68,8 @@ ng serve -o
 ```
 
 == Running Unit Tests
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 All unit tests can be executed with the command:
 
@@ -80,6 +88,8 @@ For instance, this can be useful for exporting the results to a SonarQube.
 
 == Linting the code quality
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 You can lint your files with the command
 
 ```bash
@@ -90,7 +100,11 @@ TIP: You can adjust the linting rules in the file tslint.json which can be found
 
 == Generating Code
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 === Creating a new Angular CLI project
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 For creating a new Angular CLI project the command `ng new` is used.
 
@@ -101,6 +115,8 @@ ng create my-app
 ```
 
 === Creating a new feature module
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 A new feature module can be created via `ng generate module`` command.
 
@@ -117,6 +133,8 @@ TIP: The created feature module needs to be added to the AppModule by hand.
 Other option would be to define a lazy route in AppRoutingModule to make this a lazy loaded module.
 
 === Creating a new component
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To create components the command `ng generate component` can be used.
 
@@ -135,6 +153,8 @@ TIP: If you want to export the component, you have to add the component to expor
 This would be the case if you generate a component inside shared module.
 
 == Configuring an Angular CLI project
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Inside an Angular CLI project the file `.angular-cli.json` can be used to configure the Angular CLI.
 

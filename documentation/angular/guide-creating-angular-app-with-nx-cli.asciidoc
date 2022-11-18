@@ -17,9 +17,13 @@ toc::[]
 
 = Prerequisites
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Please check before continuing this document link:guide-nx-workflow[Nx Workflow].
 
 == Creating Angular app with Nx
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 To create an angular app with Nx, we simply create an Nx workspace with angular preset using the following command:
 
@@ -36,6 +40,8 @@ image::../images/nx-cli/create-nx-workspace.png["Creating a Nx workspace", width
 Here we have given the workspace name as *nx-guide* and the app name as *nx-ng-app*. Let us have a look at the folder structure created by Nx CLI.
 
 == Nx workspace folder structure
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Every Nx workspace has the following folder structure:
 
@@ -66,6 +72,8 @@ Now that we have created our angular app, let us serve it so we can view the app
 
 == Running your angular application
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 You can still use the `ng` command to serve your application from your workspace root directory as such:
 
 [source, shell]
@@ -84,5 +92,7 @@ nx serve my-app
 Once your code is compiled, you can view your application at http://localhost:4200 as usual.
 
 == Conclusion
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In this guide you learned how to create an Angular application with Nx. You can read more about using Nx for you angular projects over  https://nx.dev/latest/angular/getting-started/intro[here].

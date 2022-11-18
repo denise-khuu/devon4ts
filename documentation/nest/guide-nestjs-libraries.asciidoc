@@ -17,25 +17,39 @@ toc::[]
 
 = Links to UI Libraries
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 We have listed some links to NestJS libraries and common requested feature components we recommend. Here is the list
 
 === Utilities
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** Nest CLS: https://github.com/Papooch/nestjs-cls
 ** Web Socket: https://docs.nestjs.com/websockets/gateways
 ** Nest Mailer: https://github.com/nest-modules/mailer
 
 === Internationalization (i18n)
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** Nest i18n: https://github.com/ToonvanStrijp/nestjs-i18n
 
 === Monitoring
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** Nest OpenTelemetry: https://github.com/MetinSeylan/Nestjs-OpenTelemetry
 
 === Logging
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** Nest Pino: https://github.com/iamolegga/nestjs-pino
 
 === Microservice
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** NestJS PG Notify: https://github.com/pvarentsov/nestjs-pg-notify
 
 === RBAC (Role-based access control)
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 ** Nest RBAC: https://github.com/sergey-telpuk/nestjs-rbac
 ** Nest Keycloak Admin: https://github.com/anonrig/nestjs-keycloak-admin

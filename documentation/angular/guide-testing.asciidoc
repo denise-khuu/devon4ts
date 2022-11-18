@@ -17,6 +17,8 @@ toc::[]
 
 = Testing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 This guide will cover the basics of testing logic inside your code with unit test cases.
 The guide assumes that you are familiar with Angular CLI (link:guide-working-with-angular-cli[see the guide])
 
@@ -31,6 +33,8 @@ Let you test components including their interaction with Angular.
 The amount of code and effort needed to create such tests is a little higher.
 
 == Testing Concept
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The following figure shows you an overview of the application architecture divided in testing areas.
 
@@ -60,6 +64,8 @@ Often *Angular Testing Utilities* are the optimal solution for testing UseCase S
 All other services should be tested with *Isolated unit tests* as they are much easier to write and maintain.
 
 == Testing Smart Components
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Testing Smart Components should assure the following.
 
@@ -175,6 +181,8 @@ The examples show the basic testing method
 
 == Testing state transitions performed by stores
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Stores are always tested with *Isolated unit tests*.
 
 Actions triggered by `dispatchAction()` calls are asynchronously performed to alter the state.
@@ -215,6 +223,8 @@ it('toggleRowChecked adds flight with given id to selectedValues Property', (don
 ----
 
 == Testing services
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 When testing services both strategies - *Isolated unit tests* and *Angular Testing Utilities* - are valid options.
 

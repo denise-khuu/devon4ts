@@ -17,7 +17,11 @@ toc::[]
 
 = File Structure
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 == Top-level
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The top-level file structure is defined by Angular CLI. You might put this "top-level file structure" into a sub-directory to facilitate your build, but this is not relevant for this guide. So the applications file structure relevant to this guide is the folder `/src/app` inside the part managed by Angular CLI.
 
@@ -44,6 +48,8 @@ The special modules _shared_ and _core_ are present as well.
 
 == Feature Modules
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 A feature module contains the modules definition and two folders representing both layers.
 
 .Feature module file structure has both layers
@@ -67,6 +73,8 @@ Otherwise, the module's routes would be defined _Component-less_
 (see http://vsavkin.tumblr.com/post/146722301646/angular-router-empty-paths-componentless-routes[vsavkin blog post]).
 
 == Components Layer
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The component layer reflects the distinction between _Smart Components_ and _Dumb Components_.
 

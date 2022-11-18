@@ -17,6 +17,8 @@ toc::[]
 
 = Nx Build System
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Nx is a smart, fast and extensible build system with first class **monorepo** support and powerful integrations. 
 
 video::-OmQ-PaSY5M[youtube]
@@ -24,6 +26,8 @@ video::-OmQ-PaSY5M[youtube]
 NOTE: If you are interested in understanding what a monorepo is about please check https://monorepo.tools/.
 
 == Philosophy
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Nx has a similar design philosophy to Visual Studio Code. Code is a powerful text editor, and you can be very productive with it even if you don't install any extensions. The ecosystem of VSCode's extensions though is what can really level up your productivity.
 
@@ -33,9 +37,13 @@ Most examples on this site use Nx plugins. It's just easier to demonstrate many 
 
 == Getting started with Nx
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The core of Nx is generic, simple, and unobtrusive. Nx plugins, although very useful for many projects, are completely optional. Most large Nx workspaces use plugins for some things and don't use plugins for others.
 
 === Creating a New Workspace
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Running `npx create-nx-workspace@latest --preset=core` creates an Nx empty workspace and `npx create-nx-workspace --preset=ts` creates it with TypeScript tooling included.
 
@@ -90,6 +98,8 @@ nx_workspace_name/
 
 === Installing Nx globally
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Alternatively to `npx`, you can install Nx CLI globally in your system using the following command:
 
 [source, shell]
@@ -100,6 +110,8 @@ npm install -g nx
 From now on you can run `nx` from anywhere in your system.
 
 == Conclusion
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In this guide you learned how to create a Nx workspace without plugins using Nx Core. You can read more about using Nx at https://nx.dev/getting-started/nx-core and in general at https://nx.dev/. 
 

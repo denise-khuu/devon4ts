@@ -17,15 +17,21 @@ toc::[]
 
 = Internationalization
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Nowadays, a common scenario in front-end applications is to have the ability to translate labels and locate numbers, dates, currency and so on when the user clicks over a language selector or similar. devon4ng and specifically Angular has a default mechanism in order to fill the gap of such features, and besides there are some wide used libraries that make even easier to translate applications.
 
 More info at link:https://angular.io/guide/i18n[Angular i18n official documentation]
 
 == devon4ng i18n approach
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The official approach could be a bit complicated, therefore the recommended one is to use the recommended library **Transloco** from https://github.com/ngneat/transloco/.
 
 === Install and configure Transloco
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to include this library in your devon4ng **Angular >= 7.2** project you will need to execute in a terminal:
 
@@ -84,6 +90,8 @@ export class TranslocoRootModule {}
 NOTE: As you might have noticed it also set an `HttpLoader` into the module's providers. The `HttpLoader` is a class that implements the `TranslocoLoader` interface. It's responsible for instructing Transloco how to load the translation files. It uses Angular HTTP client to fetch the files, based on the given path.
 
 === Usage
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 In order to translate any label in any HTML template you will need to use the `transloco` pipe available:
 
 [source,html]
@@ -153,7 +161,11 @@ In order to access access the value, use the dot notation, in this case `HOME.HE
 
 === Using the service, pipe or directive
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 ==== Structural Directive
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 Using a structural directive is the **recommended** approach. It's DRY and efficient, as it creates **one** subscription per template:
 
 [source, typescript]
@@ -186,6 +198,8 @@ We can instruct the directive to use a different language in our template:
 ----
 
 ==== Pipe
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 The use of pipes can be possible too:
 
 template:
@@ -201,6 +215,8 @@ param = {value: 'world'};
 ----
 
 ==== Attribute Directive
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 The last option available with `transloco` is the attribute directive:
 
 [source, typescript]
@@ -209,6 +225,8 @@ The last option available with `transloco` is the attribute directive:
 ----
 
 ==== Service
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 If you need to access translations in any component or service you can do it injecting the `TranslocoService` into them:
 
 [source,typescript]

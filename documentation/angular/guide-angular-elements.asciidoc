@@ -17,7 +17,11 @@ toc::[]
 
 = Angular Elements
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 == What are Angular Elements?
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 https://angular.io/guide/elements[Angular elements] are Angular components packaged as custom elements, a web standard for defining new HTML elements in a framework-agnostic way. 
 
@@ -25,21 +29,31 @@ Custom elements are a Web Platform feature currently supported by Chrome, Firefo
 
 == Why use Angular Elements?
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Angular Elements allows Angular to work with different frameworks by using input and output elements. This allows Angular to work with many different frameworks if needed. This is an ideal situation if a slow transformation of an application to `Angular` is needed or some Angular needs to be added in other web applications(For example. `ASP.net`, `JSP` etc )
 
 == Negative points about Elements
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Angular Elements is really powerful but since, the transition between views is going to be handled by another framework or HTML/JavaScript, using Angular `Router` is not possible. the view transitions have to be handled manually. This fact also eliminates the possibility of just porting an application completely.
 
 == How to use Angular Elements?
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In a generalized way, a simple `Angular component` could be transformed to an `Angular Element` with this steps:
 
 === Installing Angular Elements
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 The first step is going to be install the library using our preferred packet manager:
 
 ===== NPM
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 [source]
 ----
@@ -48,12 +62,16 @@ npm install @angular/elements
 
 ===== YARN
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 [source]
 ----
 yarn add @angular/elements
 ----
 
 === Preparing the components in the modules
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Inside the `app.module.ts`, in addition to the normal declaration of the components inside `declarations`, the modules inside `imports` and the services inside `providers`, the components need to added in `entryComponents`. If there are components that have their own module, the same logic is going to be applied for them, only adding in the `app.module.ts` the components that do not have their own module. Here is an example of this:
 
@@ -101,6 +119,8 @@ export class AppModule {
 ----
 
 === A component example
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to be able to use a component, `@Input()` and `@Output()` variables are used. These variables are going to be the ones that will allow the Angular Element to communicate with the framework/JavaScript:
 
@@ -169,13 +189,19 @@ In this file there are definitions of multiple variables that will be used as in
 
 === Solving the error
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to be able to use this `Angular Element` a `Polyfills`/`Browser support` related error needs to solved. This error can be solved in two ways:
 
 ===== Changing the target 
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 One solution is to change the target in `tsconfig.json` to `es2015`. This might not be doable for every application since maybe a specific target is required.
 
 ===== Installing Polyfaces
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Another solution is to use `AutoPollyfill`. In order to do so, the library is going to be installed with a packet manager:
 
@@ -208,6 +234,8 @@ If you want to learn more about polyfills in angular you can do it https://angul
 
 === Building the Angular Element
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 First, before building the `Angular Element`, every element inside that app component except the module need to be removed. After that, a bash script is created in the root folder,. This script will allow to put every necessary file into a JS.
 
 [source]
@@ -218,6 +246,8 @@ ng build "projectName" --configuration production --output-hashing=none && cat d
 After executing the bash script, it will generate inside the path `dist/"projectName"` (or `dist/apps/projectname` in a Nx workspace) a JS file named `"nameWantedAngularElement".js` and a css file.
 
 ===== Building with `ngx-build-plus` (Recommended)
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The library https://github.com/manfredsteyer/ngx-build-plus[`ngx-build-plus`] allows to add different options when building. In addition, it solves some errors that will occur when trying to use multiple angular elements in an application. In order to use it, yarn or npm can be used:
 
@@ -257,6 +287,8 @@ These files will be used later instead of the single JS generated in the last st
 
 ====== Extra parameters
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 Here are some extra useful parameters that `ngx-build-plus` provides:
 
   - `--keep-polyfills`: This parameter is going to allow us to keep the polyfills. This needs to be used with caution, avoiding using multiple different polyfills that could cause an error is necessary.
@@ -284,10 +316,16 @@ module.exports = {
 
 [NOTE]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
   If some libraries are excluded from the `Angular Element` you will need to add the bundled UMD files of those libraries manually.
 ====
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 === Using the Angular Element
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 The `Angular Element` that got generated in the last step can be used in almost every framework. In this case, the `Angular Element` is going to be used in html:
 
@@ -398,13 +436,19 @@ This allows JavaScript to hook with the `@Output()` event emitter that was defin
 
 == Angular Element within another Angular project
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 In order to use an `Angular Element` within another `Angular` project the following steps need to be followed:
 
 === Copy bundled script and css to resources
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 First copy the generated `.js` and `.css` inside assets in the corresponding folder.
 
 === Add bundled script to angular.json
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 Inside `angular.json` both of the files that were copied in the last step are going to be included. This will be done both, in `test` and in `build`. Including it on the test, will allow to perform unitary tests.
 
@@ -449,14 +493,22 @@ By declaring the files in the `angular.json` angular will take care of including
 
 [NOTE]
 ====
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
   If you are using Nx, the configuration file `angular.json` might be named as `workspace.json`, depending on how you had setup the workspace. The structure of the file remains similar though.
 ====
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
+
 === Using Angular Element
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 There are two ways that `Angular Element` can be used:
 
 ===== Create component dynamically
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to add the component in a dynamic way, first adding a container is necessary:
 
@@ -489,6 +541,8 @@ export class AppComponent implements OnInit {
 ----
 
 ===== Using it directly
+
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here].
 
 In order to use it directly on the templates, in the `app.module.ts` the `CUSTOM_ELEMENTS_SCHEMA` needs to be added:
 
