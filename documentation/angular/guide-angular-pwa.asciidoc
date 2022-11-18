@@ -15,6 +15,10 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
+
+'''
+
 = Angular Progressive Web App
 
 Progressive web applications (PWA) are web application that offer better user experience than the traditional ones. In general, they solve problems related with reliability and speed:

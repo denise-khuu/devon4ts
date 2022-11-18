@@ -15,6 +15,10 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
+WARNING: Hey there! Seems like you are still using the documentation of our legacy TypeScript repository. Since it won't be maintained anymore, we recommend you to checkout the new TypeScript page https://devonfw.com/docs/typescript/current/[here]. 
+
+'''
+
 = Error Handler in angular
 
 Angular allows us to set up a custom error handler that can be used to control the different errors and them in a correct way. Using a global error handler will avoid mistakes and provide a use friendly interface allowing us to indicate the user what problem is happening.
